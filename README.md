@@ -170,9 +170,3 @@ Below is a highlight of key repositories showcasing advanced software engineerin
 - 💼 **LinkedIn**: [linkedin.com/in/sahajpatel1703](https://linkedin.com/in/sahajpatel1703)
 - 📧 **Email**: [patelsahaj01@icloud.com](mailto:patelsahaj01@icloud.com)
 - 🐙 **GitHub**: [@sahajpatel123](https://github.com/sahajpatel123)
-
----
-
-<p align="center">
-  <sub><i>Engineered with precision by Sahaj Patel • Powered by Autonomous Systems & Algorithmic Design</i></sub>
-</p>
