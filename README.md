@@ -181,24 +181,6 @@ Below is a highlight of key repositories showcasing advanced software engineerin
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/output/github-contribution-grid-snake.svg">
     <img src="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Animation" width="100%">
   </picture>
-
-  <br/><br/>
-
-  <!-- 📊 Compact Activity Contribution Wave -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=react-dark&hide_border=true&area=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=github-compact&hide_border=true&area=true">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=react-dark&hide_border=true&area=true" alt="Sahaj's Contribution Wave Graph" height="240">
-  </picture>
-
-  <br/><br/>
-
-  <!-- ⚡ Streak Stats -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=default&hide_border=true">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true" alt="Streak Stats" height="145">
-  </picture>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
