@@ -15,7 +15,7 @@
   <a href="mailto:patelsahaj01@icloud.com"><img src="https://img.shields.io/badge/Email-patelsahaj01%40icloud.com-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Email"></a>
 </p>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
 ## ⚡ About Me
 
@@ -23,7 +23,19 @@
   <p>
     I am an <b>AI & Systems Architect</b> specializing in building autonomous agentic ecosystems, high-throughput backend services, quantitative prediction market systems, and scientific simulation engines. My work sits at the intersection of <b>cognitive computing</b>, <b>low-latency engineering</b>, and <b>distributed multi-agent intelligence</b>.
   </p>
+  
   <br/>
+
+```bash
+$ sahaj --init --mode autonomous
+[✓] Multi-AI Agent Swarm ........... ACTIVE
+[✓] Polymarket Quant Engine ........ ONLINE
+[✓] High-Concurrency Go Services ... RUNNING
+[✓] Status: Ready to architect state-of-the-art systems.
+```
+
+  <br/>
+
   <table>
     <tr>
       <td width="33%" align="center" valign="top">
@@ -42,7 +54,7 @@
   </table>
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
 ## 🚀 Technical Core & Engineering Mastery
 
@@ -107,7 +119,7 @@
   </table>
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
 ## 🌟 Featured Engineering Projects
 
@@ -169,25 +181,22 @@ Below is a highlight of key repositories showcasing advanced software engineerin
 > **Academic-Grade AI System Evaluation & Verification Suite**
 - **Architecture**: Standardized evaluation framework for auditing AI models, benchmarking output fidelity, and enforcing empirical reproducibility.
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
 ## 🛠️ Languages & Tooling Ecosystem
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-</p>
+<div align="center">
+  <!-- Dynamic Skill Icons Grid -->
+  <a href="https://skillicons.dev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark">
+      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=light">
+      <img src="https://skillicons.dev/icons?i=py,go,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark" alt="Skill Icons">
+    </picture>
+  </a>
+</div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
 ## 📈 GitHub Performance & Activity
 
@@ -218,7 +227,7 @@ Below is a highlight of key repositories showcasing advanced software engineerin
   </picture>
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
 ## 🤝 Connect & Collaborate
 
