@@ -146,42 +146,37 @@ Below is a highlight of key repositories showcasing advanced software engineerin
 
   <br/><br/>
 
-  <!-- 📊 Real-Time Monthly Contribution Wave Graph -->
+  <!-- 📊 Compact Activity Contribution Wave -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=react-dark&hide_border=true&area=true">
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=github-compact&hide_border=true&area=true">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=react-dark&hide_border=true&area=true" alt="Sahaj's Contribution Wave Graph" width="100%">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=react-dark&hide_border=true&area=true" alt="Sahaj's Contribution Wave Graph" height="240">
   </picture>
 
   <br/><br/>
 
-  <!-- ⚡ Dual-Theme GitHub Metrics Grid -->
-  <table border="0">
-    <tr>
-      <td align="center" width="50%">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true&count_private=true&show=prs_merged,commits">
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=default&hide_border=true&count_private=true&show=prs_merged,commits">
-          <img src="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true" alt="Sahaj's GitHub Stats" width="100%">
-        </picture>
-      </td>
-      <td align="center" width="50%">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=8">
-          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=default&hide_border=true&langs_count=8">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true" alt="Top Languages" width="100%">
-        </picture>
-      </td>
-    </tr>
-  </table>
+  <!-- ⚡ Sleek & Compact Dual-Theme Metrics -->
+  <p align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true&count_private=true">
+      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=default&hide_border=true&count_private=true">
+      <img src="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true" alt="Sahaj's GitHub Stats" height="165">
+    </picture>
+    &nbsp;
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=6">
+      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=default&hide_border=true&langs_count=6">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=default&hide_border=true" alt="Top Languages" height="165">
+    </picture>
+  </p>
 
-  <br/>
-
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=default&hide_border=true">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true" alt="Streak Stats" width="100%">
-  </picture>
+  <p align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true">
+      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=default&hide_border=true">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true" alt="Streak Stats" height="145">
+    </picture>
+  </p>
 </div>
 
 ---
