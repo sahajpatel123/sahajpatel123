@@ -287,71 +287,80 @@ def loop(theme: dict[str, str]) -> str:
 """
 
 
-def orbit(theme: dict[str, str]) -> str:
-    """A tiny hand-drawn solar system, drawn behind the words.
+def starfield(theme: dict[str, str], seed: int) -> str:
+    """Ambient starfield: twinkling stars, two drifting nebulae, one comet.
 
-    Two bodies chase each other along the same dashed path; a third drifts
-    the other way so the whole thing never sits still. No text, no boxes —
-    it reads as motion rather than a diagram.
+    Used as a quiet backdrop strip between sections. Motion is staggered so
+    nothing moves in lockstep, which is what keeps it from feeling like a
+    screensaver.
     """
-    w, h = 900, 150
-    cx, cy = w / 2, h / 2
-    dur_a, dur_b, dur_c = 9.0, 14.0, 22.0
+    import random
 
-    # Two overlapping elliptical orbits, tilted opposite ways.
-    track_a = f"M {cx - 250:g} {cy} A 250 46 -9 1 1 {cx + 250:g} {cy} A 250 46 -9 1 1 {cx - 250:g} {cy}"
-    track_b = f"M {cx - 180:g} {cy} A 180 66 9 1 1 {cx + 180:g} {cy} A 180 66 9 1 1 {cx - 180:g} {cy}"
+    rnd = random.Random(seed)
+    w, h = 900, 120
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="A tiny animated solar system">
-  <title>a tiny solar system</title>
+    stars = []
+    for i in range(46):
+        x, y = rnd.uniform(0, w), rnd.uniform(6, h - 6)
+        r = rnd.uniform(0.5, 1.5)
+        base = rnd.uniform(0.25, 0.8)
+        dur = rnd.uniform(2.4, 5.5)
+        delay = rnd.uniform(-6, 0)
+        stars.append(
+            f'    <circle class="star s{i}" cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" '
+            f'style="--b:{base:.2f};animation-duration:{dur:.2f}s;animation-delay:{delay:.2f}s"/>'
+        )
+
+    # A comet sweeps across every so often — mostly off-canvas so it surprises.
+    comet_dur = 14.0
+    comet = (
+        f'  <g class="comet" style="animation-duration:{comet_dur:g}s">\n'
+        f'    <path class="tail" d="M0 0 L-70 0"/>\n'
+        f'    <circle class="head" r="1.6"/>\n'
+        f"  </g>"
+    )
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="A quiet starfield">
+  <title>starfield</title>
   <defs>
-    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
-      <feGaussianBlur stdDeviation="2.4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <radialGradient id="sun">
-      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0.9"/>
-      <stop offset="0.55" stop-color="{theme['accent']}" stop-opacity="0.28"/>
+    <radialGradient id="nebA">
+      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0.10"/>
       <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="tail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0"/>
+      <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0.7"/>
+    </linearGradient>
   </defs>
   <style>
-    .track {{ fill: none; stroke: {theme['faint']}; stroke-width: 1; stroke-dasharray: 2 6; stroke-linecap: round; }}
-    .body {{ fill: {theme['accent']}; filter: url(#glow); }}
-    .ring {{ fill: none; stroke: {theme['accent']}; stroke-width: 1; opacity: 0.4; }}
+    .star {{ fill: {theme['accent']}; opacity: var(--b, 0.5); animation: twinkle 3s ease-in-out infinite; }}
+    @keyframes twinkle {{ 0%, 100% {{ opacity: var(--b, 0.5) }} 50% {{ opacity: calc(var(--b, 0.5) * 0.25) }} }}
+    .neb {{ animation: drift 26s ease-in-out infinite alternate; }}
+    .neb.b {{ animation-duration: 34s; animation-direction: alternate-reverse; }}
+    @keyframes drift {{ from {{ transform: translateX(-18px) }} to {{ transform: translateX(18px) }} }}
+    .comet {{ opacity: 0; animation: shoot 14s linear infinite; transform: translate({w + 80:g}px, 26px) rotate(162deg); transform-origin: 0 0; }}
+    @keyframes shoot {{
+      0%, 78% {{ opacity: 0; transform: translate({w + 80:g}px, 26px) }}
+      82% {{ opacity: 1 }}
+      90% {{ opacity: 1; transform: translate(-140px, 96px) }}
+      94%, 100% {{ opacity: 0; transform: translate(-140px, 96px) }}
+    }}
+    .head {{ fill: {theme['accent']}; }}
+    .tail {{ stroke: url(#tail); stroke-width: 1.4; stroke-linecap: round; }}
     @media (prefers-reduced-motion: reduce) {{
-      .mover {{ display: none }}
+      .star, .neb, .comet {{ animation: none }}
+      .comet {{ opacity: 0 }}
     }}
   </style>
 
-  <circle cx="{cx:g}" cy="{cy}" r="26" fill="url(#sun)"/>
-  <circle cx="{cx:g}" cy="{cy}" r="4" class="body"/>
+  <ellipse class="neb" cx="180" cy="60" rx="150" ry="40" fill="url(#nebA)"/>
+  <ellipse class="neb b" cx="700" cy="70" rx="170" ry="44" fill="url(#nebA)"/>
 
-  <path class="track" d="{track_a}"/>
-  <path class="track" d="{track_b}"/>
-
-  <g class="mover">
-    <circle class="body" r="3.4">
-      <animateMotion dur="{dur_a:g}s" repeatCount="indefinite" path="{track_a}"/>
-    </circle>
-    <circle class="ring" r="3.4">
-      <animateMotion dur="{dur_a:g}s" repeatCount="indefinite" path="{track_a}"/>
-      <animate attributeName="r" values="3.4;11" dur="2.4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0" dur="2.4s" repeatCount="indefinite"/>
-    </circle>
+  <g>
+{chr(10).join(stars)}
   </g>
 
-  <g class="mover">
-    <circle class="body" r="2.6" opacity="0.9">
-      <animateMotion dur="{dur_b:g}s" repeatCount="indefinite" begin="-5s" path="{track_b}"/>
-    </circle>
-  </g>
-
-  <g class="mover">
-    <circle class="body" r="1.8" opacity="0.7">
-      <animateMotion dur="{dur_c:g}s" repeatCount="indefinite" begin="-11s" path="{track_b}"/>
-    </circle>
-  </g>
+{comet}
 </svg>
 """
 
@@ -359,8 +368,8 @@ def orbit(theme: dict[str, str]) -> str:
 def main() -> None:
     for theme_name, palette in THEMES.items():
         (OUT / f"header-{theme_name}.svg").write_text(header(palette), encoding="utf-8")
-        (OUT / f"orbit-{theme_name}.svg").write_text(orbit(palette), encoding="utf-8")
-    for stale in OUT.glob("loop-*.svg"):
+        (OUT / f"stars-{theme_name}.svg").write_text(starfield(palette, seed=7), encoding="utf-8")
+    for stale in list(OUT.glob("orbit-*.svg")) + list(OUT.glob("loop-*.svg")):
         stale.unlink()
     print("wrote", *(p.name for p in sorted(OUT.glob("*.svg"))))
 
