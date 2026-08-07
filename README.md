@@ -19,89 +19,14 @@
 
 ## ⚡ About Me
 
-<div align="center">
-  <p>
-    I am a <b>Multi-Domain Systems Architect & Software Engineer</b> driven by building complex software systems from the ground up. My engineering capabilities span across <b>autonomous agentic AI swarms</b>, <b>low-latency distributed Go microservices</b>, <b>quantitative market trading algorithms</b>, <b>computational physics simulations</b>, and <b>modern full-stack web platforms</b>.
-  </p>
-  
-  <br/>
+I am a **Multi-Domain Systems Architect & Software Engineer** focused on engineering complex systems from first principles. My work spans across **autonomous agentic AI swarms**, **low-latency Go microservices**, **quantitative market trading algorithms**, **computational physics simulations**, and **modern full-stack web platforms**.
 
-```bash
-$ sahaj --audit-versatility
-[✓] Agentic AI & Swarm Orchestration ....... MASTERY
-[✓] Quant Finance & Prediction Markets ..... OPERATIONAL
-[✓] High-Concurrency Go Backends .......... HIGH-THROUGHPUT
-[✓] Scientific Simulations & Math .......... ACTIVE
-[✓] Modern Full-Stack Web Platforms ........ DEPLOYED
-```
+### 🌟 Core Engineering Capabilities
+- 🧠 **Autonomous AI & Cognitive Swarms**: Designing multi-agent execution swarms (`Multi-AI-Agents`) and graph reasoning engines (`cognitivesystem`).
+- ⚡ **High-Concurrency Systems & Quant**: Building low-latency Go microservices (`conduraapp`) and automated prediction market arbitrage algorithms (`polymarket`).
+- 🔬 **Computational Math & Full-Stack**: Modeling dynamic physics simulations (`Simulation`) and deploying cloud-native web architectures.
 
-  <br/>
-
-  <!-- Multi-Domain Engineering Versatility Cards -->
-  <table>
-    <tr>
-      <td width="50%" align="left" valign="top">
-        <h3>🧠 AI & Cognitive Engineering</h3>
-        <ul>
-          <li><b>Autonomous Agent Swarms</b>: Designing multi-agent pipelines (`Multi-AI-Agents`) capable of dynamic task routing and distributed execution.</li>
-          <li><b>Cognitive Memory Pipelines</b>: Implementing long-term graph state management and self-reflecting reasoning loops (`cognitivesystem`).</li>
-          <li><b>Research-Grade MLOps</b>: Building standardized benchmark suites to evaluate AI model fidelity (`ResearchGradeSystem`).</li>
-        </ul>
-      </td>
-      <td width="50%" align="left" valign="top">
-        <h3>⚡ Systems, Quant & High Concurrency</h3>
-        <ul>
-          <li><b>Low-Latency Backend Systems</b>: Engineering resilient Go microservices with high-concurrency goroutine architectures (`conduraapp`).</li>
-          <li><b>Quantitative Market Algorithms</b>: Automated prediction market arbitrage engines and real-time execution algorithms (`polymarket`, `autonomous-trading-agent`).</li>
-          <li><b>Computational Physics</b>: Modeling complex system dynamics and mathematical state evolutions (`Simulation`).</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
-
-  <br/>
-
-  <!-- Interactive Domain Versatility Matrix -->
-  <table>
-    <tr>
-      <td width="20%" align="center" valign="top">
-        <h4>🤖 Agentic AI</h4>
-        <p>Multi-Agent Swarms & Cognitive Memory Graphs</p>
-      </td>
-      <td width="20%" align="center" valign="top">
-        <h4>📈 Quant Engineering</h4>
-        <p>Algorithmic Trading & Arbitrage Systems</p>
-      </td>
-      <td width="20%" align="center" valign="top">
-        <h4>⚙️ Systems & Go</h4>
-        <p>High-Concurrency Backends & Microservices</p>
-      </td>
-      <td width="20%" align="center" valign="top">
-        <h4>⚛️ Physics & Math</h4>
-        <p>Dynamic State Space Simulations</p>
-      </td>
-      <td width="20%" align="center" valign="top">
-        <h4>💻 Full-Stack</h4>
-        <p>TypeScript, Next.js & Cloud Deployments</p>
-      </td>
-    </tr>
-  </table>
-
-  <br/>
-
-  <!-- Interactive Engineering Philosophy Accordion -->
-  <details>
-    <summary><b>🔍 Click to Expand: My Core Engineering Principles & Architectural Adaptability</b></summary>
-    <br/>
-    <div align="left">
-      <ul>
-        <li><b>First-Principles Thinking</b>: Whether writing low-level Go server routines or mathematical simulation solvers, I engineer solutions from raw fundamentals rather than relying on bloated abstraction wrappers.</li>
-        <li><b>Cross-Domain Agility</b>: Rapidly context-switching between high-frequency market data ingestion in Python to scalable distributed microservices in Go and reactive UIs in TypeScript.</li>
-        <li><b>Production-Grade Quality</b>: Emphasizing clean code separation, asynchronous non-blocking job queues (`dispatch`), and fault-tolerant architecture built for scale.</li>
-      </ul>
-    </div>
-  </details>
-</div>
+> 🎯 **Engineering Approach**: *First-principles system design, high cross-domain adaptability, zero bloat, and end-to-end production ownership.*
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
