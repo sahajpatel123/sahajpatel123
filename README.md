@@ -22,10 +22,13 @@
 
 <br/>
 
-I build software where models coordinate, markets price uncertainty, and contracts become legible.  
-TypeScript, Python, Go — usually deployed, usually measured.
-
-<sub>currently · Condura's local conductor · poly-maker's regime machine</sub>
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/intro-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/intro-light.svg" />
+  <img alt="Models coordinate, markets price uncertainty, contracts become legible" src="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/intro-dark.svg" width="100%" />
+</picture>
+</div>
 
 ---
 
