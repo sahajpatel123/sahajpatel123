@@ -19,38 +19,93 @@
 
 ## ⚡ About Me
 
-I am an **AI & Systems Architect** specializing in building autonomous agentic ecosystems, high-throughput backend services, quantitative prediction market systems, and scientific simulation engines. My work sits at the intersection of **cognitive computing**, **low-latency engineering**, and **distributed multi-agent intelligence**.
-
-- 🔭 **Current Focus**: Designing decentralized multi-AI agent orchestration frameworks & cognitive reasoning engines.
-- ⚡ **Core Strengths**: Systems programming in **Go**, algorithmic finance in **Python**, distributed state management, and modern **TypeScript/Next.js** full-stack architectures.
-- 🎯 **Engineering Philosophy**: Building scalable, fault-tolerant, research-grade software from first principles.
+<div align="center">
+  <p>
+    I am an <b>AI & Systems Architect</b> specializing in building autonomous agentic ecosystems, high-throughput backend services, quantitative prediction market systems, and scientific simulation engines. My work sits at the intersection of <b>cognitive computing</b>, <b>low-latency engineering</b>, and <b>distributed multi-agent intelligence</b>.
+  </p>
+  <br/>
+  <table>
+    <tr>
+      <td width="33%" align="center" valign="top">
+        <h3>🔭 Current Focus</h3>
+        <p>Designing decentralized <b>Multi-AI Agent Orchestration</b> & Cognitive Reasoning Engines</p>
+      </td>
+      <td width="33%" align="center" valign="top">
+        <h3>⚡ Core Strengths</h3>
+        <p>Systems in <b>Go</b> • Quant Finance in <b>Python</b> • Distributed State • <b>TypeScript/Next.js</b></p>
+      </td>
+      <td width="33%" align="center" valign="top">
+        <h3>🎯 Engineering Philosophy</h3>
+        <p>Building scalable, fault-tolerant, <b>Research-Grade Software</b> from first principles</p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
 ## 🚀 Technical Core & Engineering Mastery
 
-Here are the core technical domains I specialize in, backed by my featured open-source systems:
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                            SAHAJ'S TECH STACK MATRIX                         │
-├──────────────────────────────┬──────────────────────────────────────────────┤
-│ 🧠 Autonomous & Agentic AI   │ Multi-Agent Swarms • Cognitive Architectures │
-│                              │ LangChain • LLM Tooling • Memory Pipelines   │
-├──────────────────────────────┼──────────────────────────────────────────────┤
-│ 📈 Quant & Market Systems    │ Algorithmic Trading • Polymarket Analytics   │
-│                              │ Risk Execution • Event-Driven Financial Engines│
-├──────────────────────────────┼──────────────────────────────────────────────┤
-│ ⚙️ Systems & Distributed     │ Go (Golang) Microservices • Concurrency      │
-│                              │ Async Job Dispatch Queues • High Throughput  │
-├──────────────────────────────┼──────────────────────────────────────────────┤
-│ 🔬 Computational & Physics   │ Scientific Simulations • System Dynamics     │
-│                              │ Academic Benchmarks • Research-Grade MLOps   │
-├──────────────────────────────┼──────────────────────────────────────────────┤
-│ 💻 Modern Full-Stack         │ TypeScript • Next.js • React • Node.js       │
-│                              │ REST/GraphQL • Vercel Deployments • Tailwind │
-└──────────────────────────────┴──────────────────────────────────────────────┘
-```
+<div align="center">
+  <p>Here are the core technical domains I specialize in, backed by my featured open-source systems:</p>
+  <br/>
+  <table>
+    <thead>
+      <tr>
+        <th align="left">Domain</th>
+        <th align="left">Core Capabilities & Focus</th>
+        <th align="center">Primary Tooling & Stack</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>🧠 Autonomous & Agentic AI</b></td>
+        <td>Multi-Agent Swarms • Cognitive Architectures • LLM Pipelines • Memory Systems</td>
+        <td align="center">
+          <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+          <img src="https://img.shields.io/badge/-LangChain-1C3C3C?style=flat-square" />
+          <img src="https://img.shields.io/badge/-AI_Agents-412991?style=flat-square" />
+        </td>
+      </tr>
+      <tr>
+        <td><b>📈 Quant & Market Systems</b></td>
+        <td>Algorithmic Trading • Polymarket Analytics • Risk Execution • Financial Engines</td>
+        <td align="center">
+          <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+          <img src="https://img.shields.io/badge/-Algo_Trading-0052CC?style=flat-square" />
+          <img src="https://img.shields.io/badge/-Polymarket-00D2FF?style=flat-square&logoColor=black" />
+        </td>
+      </tr>
+      <tr>
+        <td><b>⚙️ Systems & Distributed</b></td>
+        <td>Go Microservices • Goroutine Concurrency • Async Job Dispatch • High Throughput</td>
+        <td align="center">
+          <img src="https://img.shields.io/badge/-Golang-00ADD8?style=flat-square&logo=go&logoColor=white" />
+          <img src="https://img.shields.io/badge/-High_Concurrency-FF6C37?style=flat-square" />
+          <img src="https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+        </td>
+      </tr>
+      <tr>
+        <td><b>🔬 Computational & Physics</b></td>
+        <td>Scientific Simulations • System Dynamics • State Trajectories • AI Evaluation</td>
+        <td align="center">
+          <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+          <img src="https://img.shields.io/badge/-Simulations-E040FB?style=flat-square" />
+          <img src="https://img.shields.io/badge/-MLOps-00C853?style=flat-square" />
+        </td>
+      </tr>
+      <tr>
+        <td><b>💻 Modern Full-Stack</b></td>
+        <td>TypeScript • Next.js • React • Node.js • REST/GraphQL • Vercel Deployments</td>
+        <td align="center">
+          <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+          <img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+          <img src="https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ---
 
