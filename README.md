@@ -137,23 +137,50 @@ Below is a highlight of key repositories showcasing advanced software engineerin
 ## 📈 GitHub Performance & Activity
 
 <div align="center">
-  <!-- Dual-Theme GitHub Stats Cards -->
+  <!-- 🐍 Animated Contribution Grid Snake -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true&count_private=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=default&hide_border=true&count_private=true">
-    <img src="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true" alt="Sahaj's GitHub Stats">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/output/github-contribution-grid-snake.svg">
+    <img src="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Animation" width="100%">
   </picture>
+
   <br/><br/>
+
+  <!-- 📊 Real-Time Monthly Contribution Wave Graph -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=8">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=default&hide_border=true&langs_count=8">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true" alt="Top Languages">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=react-dark&hide_border=true&area=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=github-compact&hide_border=true&area=true">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=sahajpatel123&theme=react-dark&hide_border=true&area=true" alt="Sahaj's Contribution Wave Graph" width="100%">
   </picture>
+
   <br/><br/>
+
+  <!-- ⚡ Dual-Theme GitHub Metrics Grid -->
+  <table border="0">
+    <tr>
+      <td align="center" width="50%">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true&count_private=true&show=prs_merged,commits">
+          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=default&hide_border=true&count_private=true&show=prs_merged,commits">
+          <img src="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true" alt="Sahaj's GitHub Stats" width="100%">
+        </picture>
+      </td>
+      <td align="center" width="50%">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=8">
+          <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=default&hide_border=true&langs_count=8">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true" alt="Top Languages" width="100%">
+        </picture>
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true">
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=default&hide_border=true">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true" alt="Streak Stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true" alt="Streak Stats" width="100%">
   </picture>
 </div>
 
