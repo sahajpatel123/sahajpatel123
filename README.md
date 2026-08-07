@@ -17,41 +17,86 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
-## ⚡ About Me
+## ⚡ About Me & Software Engineering POV
 
 <div align="center">
   <p>
-    I am an <b>AI & Systems Architect</b> specializing in building autonomous agentic ecosystems, high-throughput backend services, quantitative prediction market systems, and scientific simulation engines. My work sits at the intersection of <b>cognitive computing</b>, <b>low-latency engineering</b>, and <b>distributed multi-agent intelligence</b>.
+    I am an <b>AI & Systems Architect / Software Engineer</b> specializing in building autonomous agentic ecosystems, high-throughput backend services, quantitative prediction market systems, and scientific simulation engines. My work sits at the intersection of <b>cognitive computing</b>, <b>low-latency engineering</b>, and <b>distributed multi-agent intelligence</b>.
   </p>
   
   <br/>
 
 ```bash
-$ sahaj --init --mode autonomous
-[✓] Multi-AI Agent Swarm ........... ACTIVE
-[✓] Polymarket Quant Engine ........ ONLINE
-[✓] High-Concurrency Go Services ... RUNNING
-[✓] Status: Ready to architect state-of-the-art systems.
+$ sahaj --inspect --pov software-engineer
+[✓] Core Philosophy: Clean Architecture • Zero Bloat • End-to-End Ownership
+[✓] AI Engineering:  Autonomous Agent Swarms • Memory Graphs • Dynamic Tooling
+[✓] Systems & Quant: Low-Latency Go Microservices • Algorithmic Strategy Execution
+[✓] Status: Active Systems Architect & Full-Stack Software Engineer.
 ```
 
   <br/>
 
+  <!-- Software Engineering POV & Core Pillars -->
   <table>
     <tr>
-      <td width="33%" align="center" valign="top">
-        <h3>🔭 Current Focus</h3>
-        <p>Designing decentralized <b>Multi-AI Agent Orchestration</b> & Cognitive Reasoning Engines</p>
+      <td width="50%" align="left" valign="top">
+        <h3>🏗️ Software Engineering Paradigm</h3>
+        <ul>
+          <li><b>0-to-1 Architecture</b>: Designing robust backends, microservices, and AI pipelines from first principles.</li>
+          <li><b>Concurrency & Resilience</b>: Leveraging Go routines and event-driven Python engines for high throughput and fault isolation.</li>
+          <li><b>Clean Code & Performance</b>: Prioritizing low latency, modular abstractions, and strict separation of concerns.</li>
+        </ul>
       </td>
-      <td width="33%" align="center" valign="top">
-        <h3>⚡ Core Strengths</h3>
-        <p>Systems in <b>Go</b> • Quant Finance in <b>Python</b> • Distributed State • <b>TypeScript/Next.js</b></p>
-      </td>
-      <td width="33%" align="center" valign="top">
-        <h3>🎯 Engineering Philosophy</h3>
-        <p>Building scalable, fault-tolerant, <b>Research-Grade Software</b> from first principles</p>
+      <td width="50%" align="left" valign="top">
+        <h3>💡 Product & AI-Native Vision</h3>
+        <ul>
+          <li><b>Autonomous Intelligence</b>: Transforming LLMs into proactive multi-agent swarms capable of solving complex tasks.</li>
+          <li><b>Algorithmic Precision</b>: Interfacing real-time prediction market orderbooks with statistical probability models.</li>
+          <li><b>User-Centric Full-Stack</b>: Deploying interactive, reactive web interfaces backed by scalable cloud infrastructure.</li>
+        </ul>
       </td>
     </tr>
   </table>
+
+  <br/>
+
+  <!-- Interactive 4-Grid Cards -->
+  <table>
+    <tr>
+      <td width="25%" align="center" valign="top">
+        <h4>🔭 Current Focus</h4>
+        <p>Decentralized <b>Multi-AI Swarms</b> & Cognitive Reasoning Engines</p>
+      </td>
+      <td width="25%" align="center" valign="top">
+        <h4>⚡ Systems Core</h4>
+        <p>High-Concurrency <b>Go Services</b> & Event-Driven <b>Python</b></p>
+      </td>
+      <td width="25%" align="center" valign="top">
+        <h4>📊 Quant & Math</h4>
+        <p><b>Polymarket Arbitrage</b> & Physics System Simulations</p>
+      </td>
+      <td width="25%" align="center" valign="top">
+        <h4>💻 Full-Stack</h4>
+        <p><b>TypeScript, Next.js</b> & Vercel Web Deployments</p>
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+
+  <!-- Interactive Collapsible Engineering Deep Dive -->
+  <details>
+    <summary><b>🔍 Click to Expand: My Software Engineering Playbook & Architectural Patterns</b></summary>
+    <br/>
+    <div align="left">
+      <ul>
+        <li><b>Agent Swarm Orchestration</b>: Distributed task decomposition, dynamic tool routing, and cross-agent memory propagation.</li>
+        <li><b>Low-Latency Backends</b>: Non-blocking asynchronous dispatch queues (`dispatch`), memory-optimized Go microservices (`conduraapp`).</li>
+        <li><b>Quantitative Modeling</b>: Numerical differential equation solvers (`Simulation`) and algorithmic prediction market strategies (`polymarket`).</li>
+        <li><b>Academic Reproducibility</b>: Research-grade verification benchmarks and automated evaluation pipelines (`ResearchGradeSystem`).</li>
+      </ul>
+    </div>
+  </details>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
