@@ -12,7 +12,7 @@
   <a href="https://github.com/sahajpatel123?tab=followers"><img src="https://img.shields.io/github/followers/sahajpatel123?style=for-the-badge&logo=github&color=3b82f6&labelColor=1e293b" alt="Followers"></a>
   <a href="https://github.com/sahajpatel123?tab=repositories"><img src="https://img.shields.io/github/repos/personal/sahajpatel123?style=for-the-badge&logo=github&color=8b5cf6&labelColor=1e293b" alt="Repositories"></a>
   <a href="https://linkedin.com/in/sahajpatel1703"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://cleardoc-seven.vercel.app"><img src="https://img.shields.io/badge/Vercel-Live_Deployments-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"></a>
+  <a href="mailto:patelsahaj01@icloud.com"><img src="https://img.shields.io/badge/Email-patelsahaj01%40icloud.com-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Email"></a>
 </p>
 
 ---
@@ -162,12 +162,8 @@ Below is a highlight of key repositories showcasing advanced software engineerin
 ## 🤝 Connect & Collaborate
 
 - 💼 **LinkedIn**: [linkedin.com/in/sahajpatel1703](https://linkedin.com/in/sahajpatel1703)
+- 📧 **Email**: [patelsahaj01@icloud.com](mailto:patelsahaj01@icloud.com)
 - 🐙 **GitHub**: [@sahajpatel123](https://github.com/sahajpatel123)
-- 🌐 **Live Web Apps**: 
-  - [Multi-AI-Agents Engine](https://multi-ai-agents-chi.vercel.app)
-  - [Cognitive AI System](https://cognitivesystem.vercel.app)
-  - [Physics & Complex Simulations](https://simulation-iota.vercel.app)
-  - [ClearDoc Platform](https://cleardoc-seven.vercel.app)
 
 ---
 
