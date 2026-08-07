@@ -2,365 +2,199 @@
 """Generate the animated SVG art used by the profile README.
 
 Self-hosted on purpose: no image services, no webfonts, no JavaScript.
-Motion is CSS + SMIL only, which is all that renders inside the <img>
-context GitHub uses for README images.
+Motion is CSS + SMIL only — what GitHub's <img> context actually runs.
 
     python3 assets/build.py
 """
 
 from __future__ import annotations
 
+import random
 from pathlib import Path
 
 OUT = Path(__file__).parent
 
 MONO = "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace"
-SANS = "-apple-system, BlinkMacSystemFont, Segoe UI, Inter, Helvetica, Arial, sans-serif"
-
-# Monospace advance width is ~0.6em across every fallback in the stack above,
-# which is what lets us place carets without measuring text.
+SANS = "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif"
 MONO_ADVANCE = 0.6
 
 THEMES = {
     "dark": {
         "name": "#f0f6fc",
-        "ink": "#c9d1d9",
         "muted": "#8b949e",
         "faint": "#30363d",
         "accent": "#58a6ff",
+        "nebula": 0.09,
+        "star_min": 0.2,
+        "star_max": 0.7,
     },
     "light": {
         "name": "#0d1117",
-        "ink": "#1f2328",
         "muted": "#59636e",
         "faint": "#d0d7de",
         "accent": "#0969da",
+        "nebula": 0.07,
+        "star_min": 0.18,
+        "star_max": 0.55,
     },
 }
 
 PHRASES = [
-    "student · builder · systems thinker",
+    "builds systems that reason",
     "agents · markets · simulations",
     "first principles, then code",
-    "build quietly · ship clearly",
+    "small surfaces · honest defaults",
 ]
-
-STAGES = ["problem", "first principles", "minimal model", "ship", "learn"]
 
 
 def pct(value: float) -> str:
-    """Format a keyframe percentage without trailing zero noise."""
     return f"{round(value, 3):g}%"
 
 
-def header(theme: dict[str, str]) -> str:
-    w, h = 900, 186
+def header(theme: dict[str, str | float]) -> str:
+    """One composition: ambient field + identity + cycling subtitle."""
+    rnd = random.Random(42)
+    w, h = 900, 228
     cx = w / 2
-    cycle = 18.0  # seconds for one full pass through PHRASES
+    cycle = 16.0
     slot = cycle / len(PHRASES)
-    size = 15.0
-    sub_y = 142
+    size = 14.5
+    sub_y = 168
 
-    lines, keyframes = [], []
+    # Soft ambient — sparse field that stays behind the type.
+    stars = []
+    for i in range(38):
+        # Keep the center band clearer so the name stays crisp.
+        x = rnd.uniform(0, w)
+        y = rnd.choice(
+            [
+                rnd.uniform(8, 48),
+                rnd.uniform(178, h - 8),
+                rnd.uniform(8, h - 8) if rnd.random() < 0.35 else rnd.uniform(8, 48),
+            ]
+        )
+        r = rnd.uniform(0.4, 1.35)
+        base = rnd.uniform(float(theme["star_min"]), float(theme["star_max"]))
+        dur = rnd.uniform(2.8, 6.0)
+        delay = rnd.uniform(-7, 0)
+        stars.append(
+            f'    <circle class="star" cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" '
+            f'style="--b:{base:.2f};animation-duration:{dur:.2f}s;animation-delay:{delay:.2f}s"/>'
+        )
+
+    phrases = []
     for i, phrase in enumerate(PHRASES):
         text_w = len(phrase) * size * MONO_ADVANCE
         caret_x = cx + text_w / 2 + 5
         delay = i * slot
-        lines.append(
+        phrases.append(
             f'  <g class="phrase" style="animation-delay:{delay:g}s">\n'
             f'    <text x="{cx:g}" y="{sub_y}" class="sub">{phrase}</text>\n'
-            f'    <rect class="caret" x="{caret_x:.1f}" y="{sub_y - 12}" width="1.8" height="15" rx="0.9"/>\n'
+            f'    <rect class="caret" x="{caret_x:.1f}" y="{sub_y - 11}" '
+            f'width="1.7" height="14" rx="0.85"/>\n'
             f"  </g>"
         )
 
-    # Each phrase owns a quarter of the cycle: fade in, hold, fade out.
-    hold = (slot - 0.6) / cycle * 100
-    keyframes.append(
+    hold = (slot - 0.55) / cycle * 100
+    phrase_kf = (
         "@keyframes cycle{"
         f"0%{{opacity:0}}1.5%{{opacity:1}}{pct(hold)}{{opacity:1}}"
         f"{pct(slot / cycle * 100)}{{opacity:0}}100%{{opacity:0}}"
         "}"
     )
 
-    # Dot + label read as one centered unit, so the dot has to be placed
-    # against the measured label width rather than a guessed offset.
     kicker = "SAHAJPATEL123"
-    tracking = 1.6
-    kicker_w = len(kicker) * (12 * MONO_ADVANCE + tracking)
-    unit_w = 6 + 11 + kicker_w
+    tracking = 1.8
+    kicker_w = len(kicker) * (11 * MONO_ADVANCE + tracking)
+    unit_w = 6 + 10 + kicker_w
     row_left = cx - unit_w / 2
     dot_x = row_left + 3
-    kicker_x = row_left + 6 + 11 + kicker_w / 2
-    rule_y = h - 16
+    kicker_x = row_left + 6 + 10 + kicker_w / 2
+    rule_y = h - 18
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Sahaj Patel — student, builder, systems thinker">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Sahaj Patel — builds systems that reason">
   <title>Sahaj Patel</title>
   <defs>
-    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="{cx - 210:g}" y1="0" x2="{cx + 210:g}" y2="0">
+    <radialGradient id="nebL">
+      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="{theme['nebula']}"/>
+      <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="{cx - 200:g}" y1="0" x2="{cx + 200:g}" y2="0">
       <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="{theme['accent']}" stop-opacity="0.8"/>
+      <stop offset="0.5" stop-color="{theme['accent']}" stop-opacity="0.75"/>
       <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
-    .kicker {{ font-family: {MONO}; font-size: 12px; letter-spacing: {tracking}px; fill: {theme['muted']}; text-anchor: middle; }}
-    .name {{ font-family: {SANS}; font-size: 52px; font-weight: 600; letter-spacing: -1.2px; fill: {theme['name']}; text-anchor: middle; }}
+    .star {{ fill: {theme['accent']}; opacity: var(--b, 0.4); animation: twinkle 3.2s ease-in-out infinite; }}
+    @keyframes twinkle {{ 0%, 100% {{ opacity: var(--b, 0.4) }} 50% {{ opacity: calc(var(--b, 0.4) * 0.2) }} }}
+    .neb {{ animation: drift 28s ease-in-out infinite alternate; }}
+    .neb.r {{ animation-duration: 36s; animation-direction: alternate-reverse; }}
+    @keyframes drift {{ from {{ transform: translateX(-14px) }} to {{ transform: translateX(14px) }} }}
+    .kicker {{ font-family: {MONO}; font-size: 11px; letter-spacing: {tracking}px; fill: {theme['muted']}; text-anchor: middle; }}
+    .name {{ font-family: {SANS}; font-size: 54px; font-weight: 600; letter-spacing: -1.4px; fill: {theme['name']}; text-anchor: middle; }}
     .sub {{ font-family: {MONO}; font-size: {size:g}px; fill: {theme['muted']}; text-anchor: middle; }}
     .caret {{ fill: {theme['accent']}; animation: blink 1.1s steps(2, start) infinite; }}
     .phrase {{ opacity: 0; animation: cycle {cycle:g}s linear infinite; }}
-    .rise {{ animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }}
-    .fade {{ animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.25s both; }}
-    .draw {{ stroke-dasharray: 420; stroke-dashoffset: 420; animation: draw 1.6s cubic-bezier(0.3, 0.8, 0.2, 1) 0.4s both; }}
-    .dot {{ animation: beat 2.6s ease-in-out infinite; }}
-    {keyframes[0]}
+    .rise {{ animation: rise 0.85s cubic-bezier(0.2, 0.7, 0.2, 1) both; }}
+    .fade {{ animation: rise 0.85s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s both; }}
+    .draw {{ stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 1.5s cubic-bezier(0.3, 0.8, 0.2, 1) 0.35s both; }}
+    .dot {{ animation: beat 2.8s ease-in-out infinite; }}
+    {phrase_kf}
     @keyframes blink {{ 0%, 100% {{ opacity: 1 }} 50% {{ opacity: 0 }} }}
-    @keyframes rise {{ from {{ opacity: 0; transform: translateY(12px) }} to {{ opacity: 1; transform: none }} }}
+    @keyframes rise {{ from {{ opacity: 0; transform: translateY(10px) }} to {{ opacity: 1; transform: none }} }}
     @keyframes draw {{ to {{ stroke-dashoffset: 0 }} }}
     @keyframes beat {{ 0%, 100% {{ opacity: 1 }} 50% {{ opacity: 0.35 }} }}
     @media (prefers-reduced-motion: reduce) {{
-      .phrase, .caret, .rise, .fade, .draw, .dot {{ animation: none }}
+      .star, .neb, .phrase, .caret, .rise, .fade, .draw, .dot {{ animation: none }}
       .phrase {{ opacity: 0 }}
       .phrase:first-of-type {{ opacity: 1 }}
       .draw {{ stroke-dashoffset: 0 }}
+      .star {{ opacity: var(--b, 0.4) }}
     }}
   </style>
 
-  <g class="fade">
-    <circle cx="{dot_x:.1f}" cy="44" r="3" fill="{theme['accent']}" class="dot"/>
-    <circle cx="{dot_x:.1f}" cy="44" r="3" fill="none" stroke="{theme['accent']}" stroke-width="1">
-      <animate attributeName="r" values="3;12" dur="2.6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="{kicker_x:.1f}" y="48" class="kicker">{kicker}</text>
-  </g>
-
-  <g class="rise">
-    <text x="{cx:g}" y="106" class="name">Sahaj Patel</text>
-  </g>
-
-{chr(10).join(lines)}
-
-  <line x1="{cx - 210:g}" y1="{rule_y:g}" x2="{cx + 210:g}" y2="{rule_y:g}" stroke="url(#rule)" stroke-width="1.4" stroke-linecap="round" class="draw"/>
-</svg>
-"""
-
-
-def loop(theme: dict[str, str]) -> str:
-    w, h = 900, 126
-    cy, box_h = 46, 34
-    size = 12.0
-    margin, gap = 40, 0.0
-
-    widths = [max(96.0, len(s) * size * MONO_ADVANCE + 36) for s in STAGES]
-    gap = (w - 2 * margin - sum(widths)) / (len(STAGES) - 1)
-
-    boxes, x = [], float(margin)
-    for width in widths:
-        boxes.append((x, x + width))
-        x += width + gap
-
-    # Timeline: the pulse rests on a node, crosses to the next, and repeats.
-    dwell, travel, ret = 0.6, 1.4, 2.0
-    cycle = len(STAGES) * dwell + (len(STAGES) - 1) * travel + ret
-
-    nodes, pulses, keyframes = [], [], []
-    t = 0.0
-    node_windows, segments = [], []
-    for i in range(len(STAGES)):
-        node_windows.append((t, t + dwell))
-        t += dwell
-        if i < len(STAGES) - 1:
-            segments.append((t, t + travel))
-            t += travel
-    segments.append((t, t + ret))
-
-    for i, (label, (x0, x1)) in enumerate(zip(STAGES, boxes)):
-        start, end = node_windows[i]
-        nodes.append(
-            f'  <g class="node n{i}">\n'
-            f'    <rect x="{x0:.1f}" y="{cy - box_h / 2:g}" width="{x1 - x0:.1f}" height="{box_h}" rx="{box_h / 2:g}"/>\n'
-            f'    <text x="{(x0 + x1) / 2:.1f}" y="{cy + 4:g}">{label}</text>\n'
-            f"  </g>"
-        )
-        # Light the node up as the pulse arrives, then settle back. The first
-        # node straddles the loop point: lit at 0%, and lit again by the end.
-        lo, hi = start / cycle * 100, end / cycle * 100
-        if i == 0:
-            # Stay dark until the return pulse is almost home, then light up
-            # into the loop point so the handoff to 0% is seamless.
-            ramp = (segments[-1][1] - 0.8) / cycle * 100
-            frames = (
-                f"0%{{opacity:1}}{pct(hi)}{{opacity:1}}{pct(hi + 4)}{{opacity:0}}"
-                f"{pct(ramp)}{{opacity:0}}100%{{opacity:1}}"
-            )
-        else:
-            frames = (
-                f"0%{{opacity:0}}{pct(lo - 4)}{{opacity:0}}{pct(lo)}{{opacity:1}}"
-                f"{pct(hi)}{{opacity:1}}{pct(hi + 4)}{{opacity:0}}100%{{opacity:0}}"
-            )
-        keyframes.append(f"@keyframes n{i}{{{frames}}}")
-
-    paths = []
-    for i in range(len(STAGES) - 1):
-        paths.append(f"M {boxes[i][1] + 9:.1f} {cy} L {boxes[i + 1][0] - 9:.1f} {cy}")
-    # Return leg: drop below the row, run back, and rise into the first node.
-    last_cx = (boxes[-1][0] + boxes[-1][1]) / 2
-    first_cx = (boxes[0][0] + boxes[0][1]) / 2
-    paths.append(
-        f"M {last_cx:.1f} {cy + box_h / 2 + 8:g} "
-        f"C {last_cx:.1f} 108, {last_cx - 40:.1f} 112, {last_cx - 80:.1f} 112 "
-        f"L {first_cx + 80:.1f} 112 "
-        f"C {first_cx + 40:.1f} 112, {first_cx:.1f} 108, {first_cx:.1f} {cy + box_h / 2 + 8:g}"
-    )
-
-    for i, path in enumerate(paths):
-        start, end = segments[i]
-        lo, hi = start / cycle * 100, end / cycle * 100
-        keyframes.append(
-            f"@keyframes p{i}{{"
-            f"0%{{opacity:0}}{pct(max(lo - 0.4, 0))}{{opacity:0}}"
-            f"{pct(min(lo + 1.5, hi))}{{opacity:1}}{pct(max(hi - 1.5, lo))}{{opacity:1}}"
-            f"{pct(hi)}{{opacity:0}}100%{{opacity:0}}"
-            "}"
-        )
-        pulses.append(
-            f'  <circle class="pulse p{i}" r="3.2" opacity="0">\n'
-            f'    <animateMotion dur="{cycle:g}s" repeatCount="indefinite" calcMode="linear"\n'
-            f'      keyTimes="0;{start / cycle:.4f};{end / cycle:.4f};1" keyPoints="0;0;1;1"\n'
-            f'      path="{path}"/>\n'
-            f"  </circle>"
-        )
-
-    lines = "\n".join(
-        f'  <path class="wire" d="{p}"/>' for p in paths
-    )
-    arrows = []
-    for i in range(len(STAGES) - 1):
-        tip = boxes[i + 1][0] - 9
-        arrows.append(
-            f'  <path class="arrow" d="M {tip - 5:.1f} {cy - 3.5:g} L {tip:.1f} {cy} L {tip - 5:.1f} {cy + 3.5:g}"/>'
-        )
-    arrows.append(
-        f'  <path class="arrow" d="M {first_cx - 3.5:.1f} {cy + box_h / 2 + 13:g} '
-        f'L {first_cx:.1f} {cy + box_h / 2 + 8:g} L {first_cx + 3.5:.1f} {cy + box_h / 2 + 13:g}"/>'
-    )
-
-    halos = "\n".join(
-        f'  <rect class="halo h{i}" x="{x0:.1f}" y="{cy - box_h / 2:g}" width="{x1 - x0:.1f}" '
-        f'height="{box_h}" rx="{box_h / 2:g}" opacity="0"/>'
-        for i, (x0, x1) in enumerate(boxes)
-    )
-    timing = "\n    ".join(
-        [f".h{i} {{ animation: n{i} {cycle:g}s linear infinite }}" for i in range(len(STAGES))]
-        + [f".p{i} {{ animation: p{i} {cycle:g}s linear infinite }}" for i in range(len(paths))]
-    )
-
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Loop: problem, first principles, minimal model, ship, learn, repeat">
-  <title>problem → first principles → minimal model → ship → learn → repeat</title>
-  <defs>
-    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
-  <style>
-    .node rect {{ fill: none; stroke: {theme['faint']}; stroke-width: 1.2; }}
-    .node text {{ font-family: {MONO}; font-size: {size:g}px; fill: {theme['muted']}; text-anchor: middle; }}
-    .wire {{ fill: none; stroke: {theme['faint']}; stroke-width: 1.2; stroke-linecap: round; }}
-    .arrow {{ fill: none; stroke: {theme['faint']}; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }}
-    .halo {{ fill: none; stroke: {theme['accent']}; stroke-width: 1.4; }}
-    .pulse {{ fill: {theme['accent']}; filter: url(#glow); }}
-    {timing}
-    {chr(10).join('    ' + k for k in keyframes).strip()}
-    @media (prefers-reduced-motion: reduce) {{
-      .pulse, .halo {{ animation: none; opacity: 0 }}
-      .h0 {{ opacity: 1 }}
-    }}
-  </style>
-
-{lines}
-{chr(10).join(arrows)}
-{chr(10).join(nodes)}
-{halos}
-{chr(10).join(pulses)}
-</svg>
-"""
-
-
-def starfield(theme: dict[str, str], seed: int) -> str:
-    """Ambient starfield: twinkling stars, two drifting nebulae, one comet.
-
-    Used as a quiet backdrop strip between sections. Motion is staggered so
-    nothing moves in lockstep, which is what keeps it from feeling like a
-    screensaver.
-    """
-    import random
-
-    rnd = random.Random(seed)
-    w, h = 900, 120
-
-    stars = []
-    for i in range(46):
-        x, y = rnd.uniform(0, w), rnd.uniform(6, h - 6)
-        r = rnd.uniform(0.5, 1.5)
-        base = rnd.uniform(0.25, 0.8)
-        dur = rnd.uniform(2.4, 5.5)
-        delay = rnd.uniform(-6, 0)
-        stars.append(
-            f'    <circle class="star s{i}" cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" '
-            f'style="--b:{base:.2f};animation-duration:{dur:.2f}s;animation-delay:{delay:.2f}s"/>'
-        )
-
-    # A comet sweeps across every so often — mostly off-canvas so it surprises.
-    comet_dur = 14.0
-    comet = (
-        f'  <g class="comet" style="animation-duration:{comet_dur:g}s">\n'
-        f'    <path class="tail" d="M0 0 L-70 0"/>\n'
-        f'    <circle class="head" r="1.6"/>\n'
-        f"  </g>"
-    )
-
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="A quiet starfield">
-  <title>starfield</title>
-  <defs>
-    <radialGradient id="nebA">
-      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="tail" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0"/>
-      <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0.7"/>
-    </linearGradient>
-  </defs>
-  <style>
-    .star {{ fill: {theme['accent']}; opacity: var(--b, 0.5); animation: twinkle 3s ease-in-out infinite; }}
-    @keyframes twinkle {{ 0%, 100% {{ opacity: var(--b, 0.5) }} 50% {{ opacity: calc(var(--b, 0.5) * 0.25) }} }}
-    .neb {{ animation: drift 26s ease-in-out infinite alternate; }}
-    .neb.b {{ animation-duration: 34s; animation-direction: alternate-reverse; }}
-    @keyframes drift {{ from {{ transform: translateX(-18px) }} to {{ transform: translateX(18px) }} }}
-    .comet {{ opacity: 0; animation: shoot 14s linear infinite; transform: translate({w + 80:g}px, 26px) rotate(162deg); transform-origin: 0 0; }}
-    @keyframes shoot {{
-      0%, 78% {{ opacity: 0; transform: translate({w + 80:g}px, 26px) }}
-      82% {{ opacity: 1 }}
-      90% {{ opacity: 1; transform: translate(-140px, 96px) }}
-      94%, 100% {{ opacity: 0; transform: translate(-140px, 96px) }}
-    }}
-    .head {{ fill: {theme['accent']}; }}
-    .tail {{ stroke: url(#tail); stroke-width: 1.4; stroke-linecap: round; }}
-    @media (prefers-reduced-motion: reduce) {{
-      .star, .neb, .comet {{ animation: none }}
-      .comet {{ opacity: 0 }}
-    }}
-  </style>
-
-  <ellipse class="neb" cx="180" cy="60" rx="150" ry="40" fill="url(#nebA)"/>
-  <ellipse class="neb b" cx="700" cy="70" rx="170" ry="44" fill="url(#nebA)"/>
-
+  <ellipse class="neb" cx="160" cy="56" rx="140" ry="36" fill="url(#nebL)"/>
+  <ellipse class="neb r" cx="740" cy="190" rx="150" ry="38" fill="url(#nebL)"/>
   <g>
 {chr(10).join(stars)}
   </g>
 
-{comet}
+  <g class="fade">
+    <circle cx="{dot_x:.1f}" cy="42" r="2.8" fill="{theme['accent']}" class="dot"/>
+    <circle cx="{dot_x:.1f}" cy="42" r="2.8" fill="none" stroke="{theme['accent']}" stroke-width="1">
+      <animate attributeName="r" values="2.8;11" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="{kicker_x:.1f}" y="46" class="kicker">{kicker}</text>
+  </g>
+
+  <g class="rise">
+    <text x="{cx:g}" y="112" class="name">Sahaj Patel</text>
+  </g>
+
+{chr(10).join(phrases)}
+
+  <line x1="{cx - 200:g}" y1="{rule_y:g}" x2="{cx + 200:g}" y2="{rule_y:g}" stroke="url(#rule)" stroke-width="1.3" stroke-linecap="round" class="draw"/>
+</svg>
+"""
+
+
+def divider(theme: dict[str, str | float]) -> str:
+    """A single quiet rule used once between major sections."""
+    w, h = 900, 28
+    cx = w / 2
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="{cx - 160:g}" y1="0" x2="{cx + 160:g}" y2="0">
+      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="{theme['accent']}" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <line x1="{cx - 160:g}" y1="{h / 2:g}" x2="{cx + 160:g}" y2="{h / 2:g}" stroke="url(#d)" stroke-width="1" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.55;1;0.55" dur="4.5s" repeatCount="indefinite"/>
+  </line>
 </svg>
 """
 
@@ -368,8 +202,8 @@ def starfield(theme: dict[str, str], seed: int) -> str:
 def main() -> None:
     for theme_name, palette in THEMES.items():
         (OUT / f"header-{theme_name}.svg").write_text(header(palette), encoding="utf-8")
-        (OUT / f"stars-{theme_name}.svg").write_text(starfield(palette, seed=7), encoding="utf-8")
-    for stale in list(OUT.glob("orbit-*.svg")) + list(OUT.glob("loop-*.svg")):
+        (OUT / f"divider-{theme_name}.svg").write_text(divider(palette), encoding="utf-8")
+    for stale in list(OUT.glob("stars-*.svg")) + list(OUT.glob("orbit-*.svg")) + list(OUT.glob("loop-*.svg")):
         stale.unlink()
     print("wrote", *(p.name for p in sorted(OUT.glob("*.svg"))))
 
