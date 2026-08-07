@@ -287,10 +287,81 @@ def loop(theme: dict[str, str]) -> str:
 """
 
 
+def orbit(theme: dict[str, str]) -> str:
+    """A tiny hand-drawn solar system, drawn behind the words.
+
+    Two bodies chase each other along the same dashed path; a third drifts
+    the other way so the whole thing never sits still. No text, no boxes —
+    it reads as motion rather than a diagram.
+    """
+    w, h = 900, 150
+    cx, cy = w / 2, h / 2
+    dur_a, dur_b, dur_c = 9.0, 14.0, 22.0
+
+    # Two overlapping elliptical orbits, tilted opposite ways.
+    track_a = f"M {cx - 250:g} {cy} A 250 46 -9 1 1 {cx + 250:g} {cy} A 250 46 -9 1 1 {cx - 250:g} {cy}"
+    track_b = f"M {cx - 180:g} {cy} A 180 66 9 1 1 {cx + 180:g} {cy} A 180 66 9 1 1 {cx - 180:g} {cy}"
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="A tiny animated solar system">
+  <title>a tiny solar system</title>
+  <defs>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="sun">
+      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0.9"/>
+      <stop offset="0.55" stop-color="{theme['accent']}" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .track {{ fill: none; stroke: {theme['faint']}; stroke-width: 1; stroke-dasharray: 2 6; stroke-linecap: round; }}
+    .body {{ fill: {theme['accent']}; filter: url(#glow); }}
+    .ring {{ fill: none; stroke: {theme['accent']}; stroke-width: 1; opacity: 0.4; }}
+    @media (prefers-reduced-motion: reduce) {{
+      .mover {{ display: none }}
+    }}
+  </style>
+
+  <circle cx="{cx:g}" cy="{cy}" r="26" fill="url(#sun)"/>
+  <circle cx="{cx:g}" cy="{cy}" r="4" class="body"/>
+
+  <path class="track" d="{track_a}"/>
+  <path class="track" d="{track_b}"/>
+
+  <g class="mover">
+    <circle class="body" r="3.4">
+      <animateMotion dur="{dur_a:g}s" repeatCount="indefinite" path="{track_a}"/>
+    </circle>
+    <circle class="ring" r="3.4">
+      <animateMotion dur="{dur_a:g}s" repeatCount="indefinite" path="{track_a}"/>
+      <animate attributeName="r" values="3.4;11" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g class="mover">
+    <circle class="body" r="2.6" opacity="0.9">
+      <animateMotion dur="{dur_b:g}s" repeatCount="indefinite" begin="-5s" path="{track_b}"/>
+    </circle>
+  </g>
+
+  <g class="mover">
+    <circle class="body" r="1.8" opacity="0.7">
+      <animateMotion dur="{dur_c:g}s" repeatCount="indefinite" begin="-11s" path="{track_b}"/>
+    </circle>
+  </g>
+</svg>
+"""
+
+
 def main() -> None:
     for theme_name, palette in THEMES.items():
         (OUT / f"header-{theme_name}.svg").write_text(header(palette), encoding="utf-8")
-        (OUT / f"loop-{theme_name}.svg").write_text(loop(palette), encoding="utf-8")
+        (OUT / f"orbit-{theme_name}.svg").write_text(orbit(palette), encoding="utf-8")
+    for stale in OUT.glob("loop-*.svg"):
+        stale.unlink()
     print("wrote", *(p.name for p in sorted(OUT.glob("*.svg"))))
 
 

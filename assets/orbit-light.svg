@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" role="img" aria-label="A tiny animated solar system">
+  <title>a tiny solar system</title>
+  <defs>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="sun">
+      <stop offset="0" stop-color="#0969da" stop-opacity="0.9"/>
+      <stop offset="0.55" stop-color="#0969da" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#0969da" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .track { fill: none; stroke: #d0d7de; stroke-width: 1; stroke-dasharray: 2 6; stroke-linecap: round; }
+    .body { fill: #0969da; filter: url(#glow); }
+    .ring { fill: none; stroke: #0969da; stroke-width: 1; opacity: 0.4; }
+    @media (prefers-reduced-motion: reduce) {
+      .mover { display: none }
+    }
+  </style>
+
+  <circle cx="450" cy="75.0" r="26" fill="url(#sun)"/>
+  <circle cx="450" cy="75.0" r="4" class="body"/>
+
+  <path class="track" d="M 200 75.0 A 250 46 -9 1 1 700 75.0 A 250 46 -9 1 1 200 75.0"/>
+  <path class="track" d="M 270 75.0 A 180 66 9 1 1 630 75.0 A 180 66 9 1 1 270 75.0"/>
+
+  <g class="mover">
+    <circle class="body" r="3.4">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M 200 75.0 A 250 46 -9 1 1 700 75.0 A 250 46 -9 1 1 200 75.0"/>
+    </circle>
+    <circle class="ring" r="3.4">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M 200 75.0 A 250 46 -9 1 1 700 75.0 A 250 46 -9 1 1 200 75.0"/>
+      <animate attributeName="r" values="3.4;11" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g class="mover">
+    <circle class="body" r="2.6" opacity="0.9">
+      <animateMotion dur="14s" repeatCount="indefinite" begin="-5s" path="M 270 75.0 A 180 66 9 1 1 630 75.0 A 180 66 9 1 1 270 75.0"/>
+    </circle>
+  </g>
+
+  <g class="mover">
+    <circle class="body" r="1.8" opacity="0.7">
+      <animateMotion dur="22s" repeatCount="indefinite" begin="-11s" path="M 270 75.0 A 180 66 9 1 1 630 75.0 A 180 66 9 1 1 270 75.0"/>
+    </circle>
+  </g>
+</svg>
