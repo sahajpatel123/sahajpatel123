@@ -155,28 +155,12 @@ Below is a highlight of key repositories showcasing advanced software engineerin
 
   <br/><br/>
 
-  <!-- ⚡ Sleek & Compact Dual-Theme Metrics -->
-  <p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true&count_private=true">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=default&hide_border=true&count_private=true">
-      <img src="https://github-readme-stats.vercel.app/api?username=sahajpatel123&show_icons=true&theme=catppuccin_mocha&hide_border=true" alt="Sahaj's GitHub Stats" height="165">
-    </picture>
-    &nbsp;
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=6">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=default&hide_border=true&langs_count=6">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sahajpatel123&layout=compact&theme=default&hide_border=true" alt="Top Languages" height="165">
-    </picture>
-  </p>
-
-  <p align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=default&hide_border=true">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true" alt="Streak Stats" height="145">
-    </picture>
-  </p>
+  <!-- ⚡ Streak Stats -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=default&hide_border=true">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=sahajpatel123&theme=catppuccin_mocha&hide_border=true" alt="Streak Stats" height="145">
+  </picture>
 </div>
 
 ---
