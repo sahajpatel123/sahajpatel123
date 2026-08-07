@@ -1,21 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="228" viewBox="0 0 900 228" role="img" aria-label="Sahaj Patel — builds systems that reason">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Sahaj Patel — builds systems that reason">
   <title>Sahaj Patel</title>
   <defs>
-    <radialGradient id="nebL">
-      <stop offset="0" stop-color="#58a6ff" stop-opacity="0.09"/>
+    <radialGradient id="neb">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity="0.08"/>
       <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="650" y2="0">
       <stop offset="0" stop-color="#58a6ff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#58a6ff" stop-opacity="0.75"/>
+      <stop offset="0.5" stop-color="#58a6ff" stop-opacity="0.7"/>
       <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
-    .star { fill: #58a6ff; opacity: var(--b, 0.4); animation: twinkle 3.2s ease-in-out infinite; }
-    @keyframes twinkle { 0%, 100% { opacity: var(--b, 0.4) } 50% { opacity: calc(var(--b, 0.4) * 0.2) } }
     .neb { animation: drift 28s ease-in-out infinite alternate; }
-    .neb.r { animation-duration: 36s; animation-direction: alternate-reverse; }
+    .neb.b { animation-duration: 36s; animation-direction: alternate-reverse; }
     @keyframes drift { from { transform: translateX(-14px) } to { transform: translateX(14px) } }
     .kicker { font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace; font-size: 11px; letter-spacing: 1.8px; fill: #8b949e; text-anchor: middle; }
     .name { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; font-size: 54px; font-weight: 600; letter-spacing: -1.4px; fill: #f0f6fc; text-anchor: middle; }
@@ -32,86 +30,45 @@
     @keyframes draw { to { stroke-dashoffset: 0 } }
     @keyframes beat { 0%, 100% { opacity: 1 } 50% { opacity: 0.35 } }
     @media (prefers-reduced-motion: reduce) {
-      .star, .neb, .phrase, .caret, .rise, .fade, .draw, .dot { animation: none }
+      .neb, .phrase, .caret, .rise, .fade, .draw, .dot { animation: none }
       .phrase { opacity: 0 }
       .phrase:first-of-type { opacity: 1 }
       .draw { stroke-dashoffset: 0 }
-      .star { opacity: var(--b, 0.4) }
     }
   </style>
 
-  <ellipse class="neb" cx="160" cy="56" rx="140" ry="36" fill="url(#nebL)"/>
-  <ellipse class="neb r" cx="740" cy="190" rx="150" ry="38" fill="url(#nebL)"/>
-  <g>
-    <circle class="star" cx="575.5" cy="164.1" r="1.10" style="--b:0.47;animation-duration:4.69s;animation-delay:-6.78s"/>
-    <circle class="star" cx="84.3" cy="36.6" r="0.92" style="--b:0.31;animation-duration:4.69s;animation-delay:-1.33s"/>
-    <circle class="star" cx="5.8" cy="207.3" r="0.50" style="--b:0.39;animation-duration:3.95s;animation-delay:-4.59s"/>
-    <circle class="star" cx="238.1" cy="9.7" r="0.92" style="--b:0.61;animation-duration:4.78s;animation-delay:-0.97s"/>
-    <circle class="star" cx="519.6" cy="36.2" r="1.21" style="--b:0.63;animation-duration:4.02s;animation-delay:-3.83s"/>
-    <circle class="star" cx="750.7" cy="36.1" r="1.02" style="--b:0.50;animation-duration:3.35s;animation-delay:-1.90s"/>
-    <circle class="star" cx="147.1" cy="30.3" r="0.71" style="--b:0.58;animation-duration:2.98s;animation-delay:-1.25s"/>
-    <circle class="star" cx="724.5" cy="30.7" r="0.70" style="--b:0.53;animation-duration:4.07s;animation-delay:-0.60s"/>
-    <circle class="star" cx="413.0" cy="18.5" r="0.81" style="--b:0.49;animation-duration:3.96s;animation-delay:-0.02s"/>
-    <circle class="star" cx="124.5" cy="27.7" r="1.15" style="--b:0.41;animation-duration:3.00s;animation-delay:-4.33s"/>
-    <circle class="star" cx="896.5" cy="8.5" r="0.51" style="--b:0.64;animation-duration:5.20s;animation-delay:-1.62s"/>
-    <circle class="star" cx="306.2" cy="161.1" r="0.65" style="--b:0.45;animation-duration:3.37s;animation-delay:-0.61s"/>
-    <circle class="star" cx="783.5" cy="19.9" r="0.91" style="--b:0.59;animation-duration:4.50s;animation-delay:-7.00s"/>
-    <circle class="star" cx="291.7" cy="217.0" r="0.63" style="--b:0.32;animation-duration:4.62s;animation-delay:-6.45s"/>
-    <circle class="star" cx="658.7" cy="13.0" r="0.85" style="--b:0.47;animation-duration:3.65s;animation-delay:-0.89s"/>
-    <circle class="star" cx="380.8" cy="200.7" r="0.78" style="--b:0.54;animation-duration:3.99s;animation-delay:-0.70s"/>
-    <circle class="star" cx="406.3" cy="125.4" r="0.61" style="--b:0.24;animation-duration:4.82s;animation-delay:-5.40s"/>
-    <circle class="star" cx="814.9" cy="42.4" r="0.91" style="--b:0.56;animation-duration:5.62s;animation-delay:-2.97s"/>
-    <circle class="star" cx="218.7" cy="195.1" r="0.80" style="--b:0.43;animation-duration:5.13s;animation-delay:-2.29s"/>
-    <circle class="star" cx="885.7" cy="11.9" r="0.58" style="--b:0.47;animation-duration:3.25s;animation-delay:-5.72s"/>
-    <circle class="star" cx="416.4" cy="43.0" r="0.45" style="--b:0.70;animation-duration:5.48s;animation-delay:-0.22s"/>
-    <circle class="star" cx="833.7" cy="185.0" r="1.26" style="--b:0.28;animation-duration:2.81s;animation-delay:-4.27s"/>
-    <circle class="star" cx="833.9" cy="37.2" r="1.03" style="--b:0.44;animation-duration:3.41s;animation-delay:-5.48s"/>
-    <circle class="star" cx="52.6" cy="180.6" r="0.88" style="--b:0.63;animation-duration:3.30s;animation-delay:-0.27s"/>
-    <circle class="star" cx="72.1" cy="15.4" r="1.29" style="--b:0.48;animation-duration:4.65s;animation-delay:-6.72s"/>
-    <circle class="star" cx="73.8" cy="63.3" r="1.08" style="--b:0.32;animation-duration:4.07s;animation-delay:-2.30s"/>
-    <circle class="star" cx="270.0" cy="105.2" r="1.35" style="--b:0.24;animation-duration:3.48s;animation-delay:-5.14s"/>
-    <circle class="star" cx="839.9" cy="14.3" r="1.07" style="--b:0.51;animation-duration:5.96s;animation-delay:-2.42s"/>
-    <circle class="star" cx="7.0" cy="40.7" r="0.65" style="--b:0.64;animation-duration:5.18s;animation-delay:-5.91s"/>
-    <circle class="star" cx="253.6" cy="42.1" r="0.86" style="--b:0.65;animation-duration:5.51s;animation-delay:-6.35s"/>
-    <circle class="star" cx="381.2" cy="178.1" r="0.55" style="--b:0.42;animation-duration:5.06s;animation-delay:-3.07s"/>
-    <circle class="star" cx="100.7" cy="207.0" r="0.95" style="--b:0.27;animation-duration:3.21s;animation-delay:-4.84s"/>
-    <circle class="star" cx="809.1" cy="39.8" r="1.03" style="--b:0.38;animation-duration:4.59s;animation-delay:-0.88s"/>
-    <circle class="star" cx="876.5" cy="38.0" r="1.24" style="--b:0.21;animation-duration:5.16s;animation-delay:-4.67s"/>
-    <circle class="star" cx="837.7" cy="18.7" r="0.50" style="--b:0.64;animation-duration:5.55s;animation-delay:-5.44s"/>
-    <circle class="star" cx="734.9" cy="26.4" r="1.03" style="--b:0.40;animation-duration:3.69s;animation-delay:-6.51s"/>
-    <circle class="star" cx="696.0" cy="199.4" r="1.29" style="--b:0.26;animation-duration:5.91s;animation-delay:-5.75s"/>
-    <circle class="star" cx="866.3" cy="182.6" r="0.81" style="--b:0.69;animation-duration:3.17s;animation-delay:-0.70s"/>
-  </g>
+  <ellipse class="neb" cx="148" cy="48" rx="132" ry="34" fill="url(#neb)"/>
+  <ellipse class="neb b" cx="752" cy="182" rx="142" ry="36" fill="url(#neb)"/>
 
   <g class="fade">
-    <circle cx="390.4" cy="42" r="2.8" fill="#58a6ff" class="dot"/>
-    <circle cx="390.4" cy="42" r="2.8" fill="none" stroke="#58a6ff" stroke-width="1">
-      <animate attributeName="r" values="2.8;11" dur="2.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.45;0" dur="2.8s" repeatCount="indefinite"/>
+    <circle cx="390.4" cy="38" r="2.8" fill="#58a6ff" class="dot"/>
+    <circle cx="390.4" cy="38" r="2.8" fill="none" stroke="#58a6ff" stroke-width="1">
+      <animate attributeName="r" values="2.8;10" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0" dur="2.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="458.0" y="46" class="kicker">SAHAJPATEL123</text>
+    <text x="458.0" y="42" class="kicker">SAHAJPATEL123</text>
   </g>
 
   <g class="rise">
-    <text x="450" y="112" class="name">Sahaj Patel</text>
+    <text x="450" y="106" class="name">Sahaj Patel</text>
   </g>
 
   <g class="phrase" style="animation-delay:0s">
-    <text x="450" y="168" class="sub">builds systems that reason</text>
-    <rect class="caret" x="568.1" y="157" width="1.7" height="14" rx="0.85"/>
+    <text x="450" y="158" class="sub">builds systems that reason</text>
+    <rect class="caret" x="568.1" y="147" width="1.7" height="13" rx="0.85"/>
   </g>
   <g class="phrase" style="animation-delay:4s">
-    <text x="450" y="168" class="sub">agents · markets · simulations</text>
-    <rect class="caret" x="585.5" y="157" width="1.7" height="14" rx="0.85"/>
+    <text x="450" y="158" class="sub">agents · markets · simulations</text>
+    <rect class="caret" x="585.5" y="147" width="1.7" height="13" rx="0.85"/>
   </g>
   <g class="phrase" style="animation-delay:8s">
-    <text x="450" y="168" class="sub">first principles, then code</text>
-    <rect class="caret" x="572.5" y="157" width="1.7" height="14" rx="0.85"/>
+    <text x="450" y="158" class="sub">first principles, then code</text>
+    <rect class="caret" x="572.5" y="147" width="1.7" height="13" rx="0.85"/>
   </g>
   <g class="phrase" style="animation-delay:12s">
-    <text x="450" y="168" class="sub">small surfaces · honest defaults</text>
-    <rect class="caret" x="594.2" y="157" width="1.7" height="14" rx="0.85"/>
+    <text x="450" y="158" class="sub">small surfaces · honest defaults</text>
+    <rect class="caret" x="594.2" y="147" width="1.7" height="13" rx="0.85"/>
   </g>
 
-  <line x1="250" y1="210" x2="650" y2="210" stroke="url(#rule)" stroke-width="1.3" stroke-linecap="round" class="draw"/>
+  <line x1="250" y1="198" x2="650" y2="198" stroke="url(#rule)" stroke-width="1.2" stroke-linecap="round" class="draw"/>
 </svg>

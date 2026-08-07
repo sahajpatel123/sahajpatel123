@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """Generate the animated SVG art used by the profile README.
 
-Self-hosted on purpose: no image services, no webfonts, no JavaScript.
-Motion is CSS + SMIL only — what GitHub's <img> context actually runs.
+Self-hosted: no image services, no webfonts, no JavaScript.
+Motion is CSS + SMIL only — what GitHub's <img> context runs.
 
     python3 assets/build.py
 """
 
 from __future__ import annotations
 
-import random
 from pathlib import Path
 
 OUT = Path(__file__).parent
@@ -22,20 +21,18 @@ THEMES = {
     "dark": {
         "name": "#f0f6fc",
         "muted": "#8b949e",
-        "faint": "#30363d",
         "accent": "#58a6ff",
-        "nebula": 0.09,
-        "star_min": 0.2,
-        "star_max": 0.7,
+        "nebula": 0.08,
+        "rule_mid": 0.70,
+        "dot_pulse": 0.40,
     },
     "light": {
-        "name": "#0d1117",
-        "muted": "#59636e",
-        "faint": "#d0d7de",
+        "name": "#1f2328",
+        "muted": "#656d76",
         "accent": "#0969da",
-        "nebula": 0.07,
-        "star_min": 0.18,
-        "star_max": 0.55,
+        "nebula": 0.06,
+        "rule_mid": 0.55,
+        "dot_pulse": 0.35,
     },
 }
 
@@ -51,36 +48,14 @@ def pct(value: float) -> str:
     return f"{round(value, 3):g}%"
 
 
-def header(theme: dict[str, str | float]) -> str:
-    """One composition: ambient field + identity + cycling subtitle."""
-    rnd = random.Random(42)
-    w, h = 900, 228
-    cx = w / 2
+def header(theme: dict[str, float | str]) -> str:
+    """One composition: faint nebula wash + identity + cycling subtitle."""
+    w, h = 900, 220
+    cx = 450.0
     cycle = 16.0
     slot = cycle / len(PHRASES)
     size = 14.5
-    sub_y = 168
-
-    # Soft ambient — sparse field that stays behind the type.
-    stars = []
-    for i in range(38):
-        # Keep the center band clearer so the name stays crisp.
-        x = rnd.uniform(0, w)
-        y = rnd.choice(
-            [
-                rnd.uniform(8, 48),
-                rnd.uniform(178, h - 8),
-                rnd.uniform(8, h - 8) if rnd.random() < 0.35 else rnd.uniform(8, 48),
-            ]
-        )
-        r = rnd.uniform(0.4, 1.35)
-        base = rnd.uniform(float(theme["star_min"]), float(theme["star_max"]))
-        dur = rnd.uniform(2.8, 6.0)
-        delay = rnd.uniform(-7, 0)
-        stars.append(
-            f'    <circle class="star" cx="{x:.1f}" cy="{y:.1f}" r="{r:.2f}" '
-            f'style="--b:{base:.2f};animation-duration:{dur:.2f}s;animation-delay:{delay:.2f}s"/>'
-        )
+    sub_y = 158
 
     phrases = []
     for i, phrase in enumerate(PHRASES):
@@ -91,7 +66,7 @@ def header(theme: dict[str, str | float]) -> str:
             f'  <g class="phrase" style="animation-delay:{delay:g}s">\n'
             f'    <text x="{cx:g}" y="{sub_y}" class="sub">{phrase}</text>\n'
             f'    <rect class="caret" x="{caret_x:.1f}" y="{sub_y - 11}" '
-            f'width="1.7" height="14" rx="0.85"/>\n'
+            f'width="1.7" height="13" rx="0.85"/>\n'
             f"  </g>"
         )
 
@@ -110,26 +85,23 @@ def header(theme: dict[str, str | float]) -> str:
     row_left = cx - unit_w / 2
     dot_x = row_left + 3
     kicker_x = row_left + 6 + 10 + kicker_w / 2
-    rule_y = h - 18
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Sahaj Patel — builds systems that reason">
   <title>Sahaj Patel</title>
   <defs>
-    <radialGradient id="nebL">
+    <radialGradient id="neb">
       <stop offset="0" stop-color="{theme['accent']}" stop-opacity="{theme['nebula']}"/>
       <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="{cx - 200:g}" y1="0" x2="{cx + 200:g}" y2="0">
+    <linearGradient id="rule" gradientUnits="userSpaceOnUse" x1="250" y1="0" x2="650" y2="0">
       <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="{theme['accent']}" stop-opacity="0.75"/>
+      <stop offset="0.5" stop-color="{theme['accent']}" stop-opacity="{theme['rule_mid']}"/>
       <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <style>
-    .star {{ fill: {theme['accent']}; opacity: var(--b, 0.4); animation: twinkle 3.2s ease-in-out infinite; }}
-    @keyframes twinkle {{ 0%, 100% {{ opacity: var(--b, 0.4) }} 50% {{ opacity: calc(var(--b, 0.4) * 0.2) }} }}
     .neb {{ animation: drift 28s ease-in-out infinite alternate; }}
-    .neb.r {{ animation-duration: 36s; animation-direction: alternate-reverse; }}
+    .neb.b {{ animation-duration: 36s; animation-direction: alternate-reverse; }}
     @keyframes drift {{ from {{ transform: translateX(-14px) }} to {{ transform: translateX(14px) }} }}
     .kicker {{ font-family: {MONO}; font-size: 11px; letter-spacing: {tracking}px; fill: {theme['muted']}; text-anchor: middle; }}
     .name {{ font-family: {SANS}; font-size: 54px; font-weight: 600; letter-spacing: -1.4px; fill: {theme['name']}; text-anchor: middle; }}
@@ -146,55 +118,32 @@ def header(theme: dict[str, str | float]) -> str:
     @keyframes draw {{ to {{ stroke-dashoffset: 0 }} }}
     @keyframes beat {{ 0%, 100% {{ opacity: 1 }} 50% {{ opacity: 0.35 }} }}
     @media (prefers-reduced-motion: reduce) {{
-      .star, .neb, .phrase, .caret, .rise, .fade, .draw, .dot {{ animation: none }}
+      .neb, .phrase, .caret, .rise, .fade, .draw, .dot {{ animation: none }}
       .phrase {{ opacity: 0 }}
       .phrase:first-of-type {{ opacity: 1 }}
       .draw {{ stroke-dashoffset: 0 }}
-      .star {{ opacity: var(--b, 0.4) }}
     }}
   </style>
 
-  <ellipse class="neb" cx="160" cy="56" rx="140" ry="36" fill="url(#nebL)"/>
-  <ellipse class="neb r" cx="740" cy="190" rx="150" ry="38" fill="url(#nebL)"/>
-  <g>
-{chr(10).join(stars)}
-  </g>
+  <ellipse class="neb" cx="148" cy="48" rx="132" ry="34" fill="url(#neb)"/>
+  <ellipse class="neb b" cx="752" cy="182" rx="142" ry="36" fill="url(#neb)"/>
 
   <g class="fade">
-    <circle cx="{dot_x:.1f}" cy="42" r="2.8" fill="{theme['accent']}" class="dot"/>
-    <circle cx="{dot_x:.1f}" cy="42" r="2.8" fill="none" stroke="{theme['accent']}" stroke-width="1">
-      <animate attributeName="r" values="2.8;11" dur="2.8s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.45;0" dur="2.8s" repeatCount="indefinite"/>
+    <circle cx="{dot_x:.1f}" cy="38" r="2.8" fill="{theme['accent']}" class="dot"/>
+    <circle cx="{dot_x:.1f}" cy="38" r="2.8" fill="none" stroke="{theme['accent']}" stroke-width="1">
+      <animate attributeName="r" values="2.8;10" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="{theme['dot_pulse']};0" dur="2.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="{kicker_x:.1f}" y="46" class="kicker">{kicker}</text>
+    <text x="{kicker_x:.1f}" y="42" class="kicker">{kicker}</text>
   </g>
 
   <g class="rise">
-    <text x="{cx:g}" y="112" class="name">Sahaj Patel</text>
+    <text x="{cx:g}" y="106" class="name">Sahaj Patel</text>
   </g>
 
 {chr(10).join(phrases)}
 
-  <line x1="{cx - 200:g}" y1="{rule_y:g}" x2="{cx + 200:g}" y2="{rule_y:g}" stroke="url(#rule)" stroke-width="1.3" stroke-linecap="round" class="draw"/>
-</svg>
-"""
-
-
-def divider(theme: dict[str, str | float]) -> str:
-    """A single quiet rule used once between major sections."""
-    w, h = 900, 28
-    cx = w / 2
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-hidden="true">
-  <defs>
-    <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="{cx - 160:g}" y1="0" x2="{cx + 160:g}" y2="0">
-      <stop offset="0" stop-color="{theme['accent']}" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="{theme['accent']}" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="{theme['accent']}" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <line x1="{cx - 160:g}" y1="{h / 2:g}" x2="{cx + 160:g}" y2="{h / 2:g}" stroke="url(#d)" stroke-width="1" stroke-linecap="round">
-    <animate attributeName="opacity" values="0.55;1;0.55" dur="4.5s" repeatCount="indefinite"/>
-  </line>
+  <line x1="250" y1="198" x2="650" y2="198" stroke="url(#rule)" stroke-width="1.2" stroke-linecap="round" class="draw"/>
 </svg>
 """
 
@@ -202,8 +151,12 @@ def divider(theme: dict[str, str | float]) -> str:
 def main() -> None:
     for theme_name, palette in THEMES.items():
         (OUT / f"header-{theme_name}.svg").write_text(header(palette), encoding="utf-8")
-        (OUT / f"divider-{theme_name}.svg").write_text(divider(palette), encoding="utf-8")
-    for stale in list(OUT.glob("stars-*.svg")) + list(OUT.glob("orbit-*.svg")) + list(OUT.glob("loop-*.svg")):
+    for stale in (
+        list(OUT.glob("divider-*.svg"))
+        + list(OUT.glob("stars-*.svg"))
+        + list(OUT.glob("orbit-*.svg"))
+        + list(OUT.glob("loop-*.svg"))
+    ):
         stale.unlink()
     print("wrote", *(p.name for p in sorted(OUT.glob("*.svg"))))
 

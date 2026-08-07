@@ -22,19 +22,12 @@
 
 <br/>
 
-I build systems that have to be right — multi-agent pipelines with kill switches,
-prediction-market engines with risk gates, and simulations that pressure-test an
-idea before any product code exists.
+I build software where models coordinate, markets price uncertainty, and contracts become legible.  
+TypeScript, Python, Go — usually deployed, usually measured.
 
-<sub>currently · refining Condura's local conductor and poly-maker's regime machine</sub>
+<sub>currently · Condura's local conductor · poly-maker's regime machine</sub>
 
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/divider-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/divider-light.svg" />
-  <img alt="" src="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/divider-dark.svg" width="100%" />
-</picture>
-</div>
+---
 
 ### selected work
 
@@ -42,36 +35,36 @@ idea before any product code exists.
   <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/sahajpatel123/Multi-AI-Agents">Arena</a></h4>
-      <p>Four agents answer in parallel; a fifth scores on insight and intellectual honesty — then debate or focus any mind.</p>
+      <p>Four agents run in parallel; a scorer picks winners, and debate/focus modes change how they argue.</p>
       <p><sub><code>TypeScript</code> <code>Next.js</code> · <a href="https://multi-ai-agents-chi.vercel.app">live</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/sahajpatel123/Simulation">TheCee</a></h4>
-      <p>10,000 simulated consumers across 52 psychographic clusters — find why an idea lands before you build it.</p>
+      <p>Ten thousand synthetic consumers, each mapped to one of fifty-two psychographic clusters, drive the simulation.</p>
       <p><sub><code>Python</code> <code>FastAPI</code> · <a href="https://simulation-iota.vercel.app">live</a></sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/sahajpatel123/cleardoc">ClearDoc</a></h4>
-      <p>Contracts become plain English with traps marked, a verdict, and the next move — four serverless endpoints, rate-limited.</p>
+      <p>Upload a contract; get plain English, flagged traps, and a verdict — serverless, end to end.</p>
       <p><sub><code>JavaScript</code> · <a href="https://cleardoc-seven.vercel.app">live</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/sahajpatel123/cognitivesystem">Cognitive System</a></h4>
-      <p>Structured reasoning stays hidden; only a style-aligned reply surfaces — never a chat wrapper.</p>
+      <p>Reasoning stays structured underneath; what you read matches a chosen voice on top.</p>
       <p><sub><code>Python</code> · <a href="https://cognitivesystem.vercel.app">live</a></sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/sahajpatel123/polymarket">poly-maker</a></h4>
-      <p>Maker-only Polymarket quoting with inventory skew and a toxicity regime that pulls when the book turns.</p>
+      <p>Maker-only quotes on Polymarket: fair value, inventory skew, and a toxicity regime when flow turns.</p>
       <p><sub><code>Python</code> <code>asyncio</code></sub></p>
     </td>
     <td width="50%" valign="top">
       <h4><a href="https://github.com/sahajpatel123/conduraapp">Condura</a></h4>
-      <p>A Go daemon that conducts the AI tools already on your machine — local-first, free forever.</p>
+      <p>A local-first conductor in Go: one process on your machine routes tools and models without sending data out.</p>
       <p><sub><code>Go</code> <code>desktop</code></sub></p>
     </td>
   </tr>
@@ -91,13 +84,7 @@ idea before any product code exists.
 
 </details>
 
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/divider-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/divider-light.svg" />
-  <img alt="" src="https://raw.githubusercontent.com/sahajpatel123/sahajpatel123/main/assets/divider-dark.svg" width="100%" />
-</picture>
-</div>
+---
 
 ### stack
 
@@ -150,7 +137,7 @@ idea before any product code exists.
 
 ### say hello
 
-If something here is useful to you — or you'd like to build something that has to be right — reach out.
+If something here maps to a problem you're working on, issues and DMs are open.
 
 [![LinkedIn](https://img.shields.io/badge/linkedin-sahajpatel1703-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=1f2328)](https://linkedin.com/in/sahajpatel1703)
 [![Email](https://img.shields.io/badge/email-patelsahaj01@icloud.com-6b7280?style=flat-square&logo=maildotru&logoColor=white&labelColor=1f2328)](mailto:patelsahaj01@icloud.com)
