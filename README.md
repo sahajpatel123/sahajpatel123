@@ -58,9 +58,9 @@
 ### 🛠️ Languages & Tooling Ecosystem
 <a href="https://skillicons.dev">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=light">
-    <img src="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark" alt="Skill Icons">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,postgres,redis,graphql,docker,git,github,vercel,vscode,bash,linux,html,css&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,postgres,redis,graphql,docker,git,github,vercel,vscode,bash,linux,html,css&theme=light">
+    <img src="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,postgres,redis,graphql,docker,git,github,vercel,vscode,bash,linux,html,css&theme=dark" alt="Skill Icons">
   </picture>
 </a>
 
