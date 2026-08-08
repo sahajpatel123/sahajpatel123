@@ -391,8 +391,35 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
-## 🤝 Connect & Collaborate
+## 🤝 Let's Connect & Build Together!
 
-- 💼 **LinkedIn**: [linkedin.com/in/sahajpatel1703](https://linkedin.com/in/sahajpatel1703)
-- 📧 **Email**: [patelsahaj01@icloud.com](mailto:patelsahaj01@icloud.com)
-- 🐙 **GitHub**: [@sahajpatel123](https://github.com/sahajpatel123)
+<div align="center">
+
+<p align="center">
+  <i>Whether you want to discuss <b>AI Agent Swarms</b>, <b>Quant Systems</b>, open-source projects, or just talk tech over a virtual coffee — I'm always excited to connect!</i>
+</p>
+
+<br/>
+
+<p align="center">
+  <a href="https://linkedin.com/in/sahajpatel1703">
+    <img src="https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:patelsahaj01@icloud.com">
+    <img src="https://img.shields.io/badge/Email-Send_a_Message-007AFF?style=for-the-badge&logo=apple&logoColor=white" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/sahajpatel123">
+    <img src="https://img.shields.io/badge/GitHub-Follow_@sahajpatel123-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+<br/>
+
+<p align="center">
+  ☕ <b>Always open to chat about:</b><br/>
+  <code>Autonomous AI Swarms</code> • <code>Quant Trading & Arbitrage</code> • <code>High-Concurrency Go Services</code> • <code>Open Source</code>
+</p>
+
+</div>
