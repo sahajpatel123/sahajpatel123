@@ -199,7 +199,6 @@
       </ul>
       <p align="center">
         <a href="https://github.com/sahajpatel123/Multi-AI-Agents"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
-        <a href="https://multi-ai-agents-chi.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
         <img src="https://img.shields.io/badge/Tech-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
       </p>
     </td>
@@ -213,7 +212,6 @@
       </ul>
       <p align="center">
         <a href="https://github.com/sahajpatel123/cognitivesystem"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
-        <a href="https://cognitivesystem.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
         <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
       </p>
     </td>
@@ -331,7 +329,6 @@
       </ul>
       <p align="center">
         <a href="https://github.com/sahajpatel123/Simulation"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
-        <a href="https://simulation-iota.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
         <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
       </p>
     </td>
@@ -345,7 +342,6 @@
       </ul>
       <p align="center">
         <a href="https://github.com/sahajpatel123/cleardoc"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
-        <a href="https://cleardoc-seven.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
         <img src="https://img.shields.io/badge/Tech-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
       </p>
     </td>
