@@ -57,6 +57,7 @@
 
 ### 🎯 What I Know & Master
 - 💻 **Primary Languages**: `Go (Golang)` • `Python` • `C and C++` • `JavaScript`
+- `Multi-Agent Swarms` • `Cognitive Architectures` • `Goroutine Concurrency` • `Quant Arbitrage` • `MLOps`
 - 🌐 **Frameworks & Cloud**: `Next.js` • `React` • `Node.js` • `FastAPI` • `Docker` • `Vercel`
 
 > 🎯 **Engineering Approach**: *First-principles design, high cross-domain adaptability, zero bloat, and end-to-end production ownership.*
