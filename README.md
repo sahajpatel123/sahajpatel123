@@ -55,6 +55,17 @@
 
 <br/>
 
+### 🛠️ Languages & Tooling Ecosystem
+<a href="https://skillicons.dev">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=light">
+    <img src="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark" alt="Skill Icons">
+  </picture>
+</a>
+
+<br/><br/>
+
 ### 🎯 What I Know & Master
 - `Go (Golang)` • `Python` • `C and C++` • `JavaScript`
 - `Multi-Agent Swarms` • `Cognitive Architectures` • `Goroutine Concurrency` • `Quant Arbitrage` • `MLOps`
@@ -333,21 +344,6 @@
     </td>
   </tr>
 </table>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
-
-## 🛠️ Languages & Tooling Ecosystem
-
-<div align="center">
-  <!-- Dynamic Skill Icons Grid -->
-  <a href="https://skillicons.dev">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark">
-      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=light">
-      <img src="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark" alt="Skill Icons">
-    </picture>
-  </a>
-</div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
