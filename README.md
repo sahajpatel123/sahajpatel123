@@ -393,33 +393,50 @@
 
 ## 🤝 Let's Connect & Build Together!
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-🟢_Open_to_Collaborations_%26_Tech_Chats-00FF66?style=for-the-badge&labelColor=000000" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Response_Time-⚡_<24_Hours-FF007F?style=for-the-badge&labelColor=000000" />
+</p>
+
+<br/>
+
 <div align="center">
-
-<p align="center">
-  <i>Whether you want to discuss <b>AI Agent Swarms</b>, <b>Quant Systems</b>, open-source projects, or just talk tech over a virtual coffee — I'm always excited to connect!</i>
-</p>
+  <p><i>Whether you are a recruiter, engineer, founder, or open-source builder — select your preferred connection channel below:</i></p>
+  <br/>
+  <table>
+    <tr>
+      <td width="33%" align="center" valign="top">
+        <h3>💼 Professional</h3>
+        <p>Recruiting, consulting, software architecture & partnerships.</p>
+        <br/>
+        <a href="https://linkedin.com/in/sahajpatel1703">
+          <img src="https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+        </a>
+      </td>
+      <td width="33%" align="center" valign="top">
+        <h3>📧 Direct Inbox</h3>
+        <p>Deep tech discussions, project proposals & virtual coffee chats.</p>
+        <br/>
+        <a href="mailto:patelsahaj01@icloud.com">
+          <img src="https://img.shields.io/badge/Email-Send_a_Message-007AFF?style=for-the-badge&logo=apple&logoColor=white" />
+        </a>
+      </td>
+      <td width="33%" align="center" valign="top">
+        <h3>🐙 Open Source</h3>
+        <p>Forking repos, issue discussions, PR reviews & star exchanges.</p>
+        <br/>
+        <a href="https://github.com/sahajpatel123">
+          <img src="https://img.shields.io/badge/GitHub-Follow_@sahajpatel123-181717?style=for-the-badge&logo=github&logoColor=white" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <br/>
 
-<p align="center">
-  <a href="https://linkedin.com/in/sahajpatel1703">
-    <img src="https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:patelsahaj01@icloud.com">
-    <img src="https://img.shields.io/badge/Email-Send_a_Message-007AFF?style=for-the-badge&logo=apple&logoColor=white" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/sahajpatel123">
-    <img src="https://img.shields.io/badge/GitHub-Follow_@sahajpatel123-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
-
-<br/>
-
-<p align="center">
-  ☕ <b>Always open to chat about:</b><br/>
-  <code>Autonomous AI Swarms</code> • <code>Quant Trading & Arbitrage</code> • <code>High-Concurrency Go Services</code> • <code>Open Source</code>
-</p>
-
+<div align="center">
+  <p>☕ <b>Favorite Tech Topics I Love Discussing:</b></p>
+  <code>🤖 Autonomous Agent Swarms</code> • <code>📈 Quant Trading & Arbitrage</code> • <code>⚡ Go Backend Architecture</code> • <code>🔬 Computational Physics</code>
 </div>
