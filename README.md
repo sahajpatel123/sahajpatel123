@@ -19,14 +19,50 @@
 
 ## ⚡ About Me
 
-I am a **Multi-Domain Systems Architect & Software Engineer** focused on engineering complex systems from first principles. My work spans across **autonomous agentic AI swarms**, **low-latency Go microservices**, **quantitative market trading algorithms**, **computational physics simulations**, and **modern full-stack web platforms**.
+<div align="center">
 
-### 🌟 Core Engineering Mastery & Implementation Focus
-- 🧠 **Autonomous AI & Cognitive Swarms**: Architecting multi-agent execution swarms, inter-agent communication protocols, episodic memory state graphs, and self-reflecting LLM reasoning pipelines.
-- ⚡ **High-Concurrency Systems & Quant Engineering**: Designing low-latency Go microservices utilizing goroutine memory management, real-time market data ingestion engines, and statistical prediction arbitrage algorithms.
-- 🔬 **Scientific Modeling & Cloud Infrastructure**: Formulating numerical physics solvers for complex system dynamics, automated MLOps evaluation frameworks, and deploying reactive TypeScript/Next.js web architectures.
+### 👋 Who I Am
+<p>
+  I'm <b>Sahaj Patel</b> — a Systems Architect & Full-Stack Software Engineer driven by building complex, high-impact software from first principles.
+  I engineer scalable systems at the intersection of <b>Autonomous AI Agents</b>, <b>High-Concurrency Backends</b>, <b>Quantitative Finance</b>, and <b>Computational Math</b>.
+</p>
 
-> 🎯 **Engineering Approach**: *First-principles system design, high cross-domain adaptability, zero bloat, and end-to-end production ownership.*
+<br/>
+
+### 🛠️ What I Build
+<table>
+  <tr>
+    <td width="50%" align="left" valign="top">
+      <h4>🧠 Autonomous AI Ecosystems</h4>
+      <p>Multi-agent swarms, cognitive reasoning engines, and episodic memory state graphs.</p>
+    </td>
+    <td width="50%" align="left" valign="top">
+      <h4>⚡ High-Concurrency Systems</h4>
+      <p>Ultra-fast Go microservices, goroutine memory pools, and async job dispatch queues.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="left" valign="top">
+      <h4>📈 Quantitative Trading Engines</h4>
+      <p>Polymarket prediction analytics, statistical arbitrage, and real-time market data loops.</p>
+    </td>
+    <td width="50%" align="left" valign="top">
+      <h4>🔬 Computational Math & Full-Stack</h4>
+      <p>Dynamic state physics simulations and reactive TypeScript/Next.js web platforms.</p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+### 🎯 What I Know & Master
+- 💻 **Primary Languages**: `Go (Golang)` • `Python` • `TypeScript` • `JavaScript`
+- 🧠 **AI & Systems Core**: `Multi-Agent Swarms` • `Cognitive Architectures` • `Goroutine Concurrency` • `Quant Arbitrage` • `MLOps`
+- 🌐 **Frameworks & Cloud**: `Next.js` • `React` • `Node.js` • `FastAPI` • `Docker` • `Vercel`
+
+> 🎯 **Engineering Approach**: *First-principles design, high cross-domain adaptability, zero bloat, and end-to-end production ownership.*
+
+</div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
