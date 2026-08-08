@@ -394,10 +394,11 @@
 <div align="center">
   <h2>🤝 Let's Connect</h2>
   <br/>
-  <p>💼 <b>LinkedIn</b>: <a href="https://linkedin.com/in/sahajpatel1703">linkedin.com/in/sahajpatel1703</a></p>
-  <br/>
-  <p>📧 <b>Email</b>: <a href="mailto:patelsahaj01@icloud.com">patelsahaj01@icloud.com</a></p>
-  <br/>
-  <p>🐙 <b>GitHub</b>: <a href="https://github.com/sahajpatel123">@sahajpatel123</a></p>
-  <br/>
+  <p>
+    💼 <b>LinkedIn</b>: <a href="https://linkedin.com/in/sahajpatel1703">sahajpatel1703</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    📧 <b>Email</b>: <a href="mailto:patelsahaj01@icloud.com">patelsahaj01@icloud.com</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    🐙 <b>GitHub</b>: <a href="https://github.com/sahajpatel123">@sahajpatel123</a>
+  </p>
 </div>
