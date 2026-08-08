@@ -97,63 +97,206 @@ I am a **Multi-Domain Systems Architect & Software Engineer** focused on enginee
 
 ## 🌟 Featured Engineering Projects
 
-Below is a highlight of key repositories showcasing advanced software engineering concepts:
+<div align="center">
+  <p>A curated showcase of open-source architectures spanning Autonomous Agents, Quant Engines, Low-Latency Backends, and Scientific Simulations.</p>
+</div>
 
-### 🤖 1. [Multi-AI-Agents](https://github.com/sahajpatel123/Multi-AI-Agents) `TypeScript` `Next.js` `AI Orchestration`
-> **Autonomous Multi-Agent Orchestration Platform**
-- **Architecture**: Distributed multi-agent execution pipeline capable of task decomposition, dynamic agent routing, and subagent swarm management.
-- **Key Capability**: Inter-agent communication protocols and adaptive context sharing across LLM instances.
-- 🔗 **Live Demo**: [multi-ai-agents-chi.vercel.app](https://multi-ai-agents-chi.vercel.app)
+<br/>
 
----
+### 🤖 Autonomous AI & Cognitive Systems
 
-### 📊 2. [autonomous-trading-agent](https://github.com/sahajpatel123/autonomous-trading-agent) `Python` `Quant Finance` `Event-Driven`
-> **Autonomous AI Trading Agent & Execution Engine**
-- **Architecture**: Real-time automated market monitoring agent featuring dynamic strategy switching, automated risk management, and algorithmic trade placement.
-- **Key Capability**: Low-latency event loops with modular strategy layers for multi-asset automated trading.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 <a href="https://github.com/sahajpatel123/Multi-AI-Agents">Multi-AI-Agents</a></h3>
+      <p><i>Autonomous Multi-Agent Orchestration Platform</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Distributed subagent execution pipeline with dynamic task routing & swarm management.</li>
+        <li><b>Capability</b>: Inter-agent communication protocols & cross-instance memory sharing.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/Multi-AI-Agents"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <a href="https://multi-ai-agents-chi.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
+        <img src="https://img.shields.io/badge/Tech-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧠 <a href="https://github.com/sahajpatel123/cognitivesystem">cognitivesystem</a></h3>
+      <p><i>Structured Cognitive Reasoning & Long-Term Memory Pipeline</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Episodic memory retrieval engine with knowledge graphs & self-reflection loops.</li>
+        <li><b>Capability</b>: Enhances LLM inference with structured cognitive state management.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/cognitivesystem"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <a href="https://cognitivesystem.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
+        <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📊 <a href="https://github.com/sahajpatel123/autonomous-trading-agent">autonomous-trading-agent</a></h3>
+      <p><i>Autonomous AI Trading & Strategy Execution Engine</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Real-time automated market monitoring agent with dynamic risk controls.</li>
+        <li><b>Capability</b>: Low-latency event loops & modular multi-asset trading strategies.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/autonomous-trading-agent"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Domain-Quant_Finance-0052CC?style=flat-square"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛠️ <a href="https://github.com/sahajpatel123/assistant">assistant</a></h3>
+      <p><i>Context-Aware Virtual AI Assistant System</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Personal AI assistant framework supporting tool invocation & task execution.</li>
+        <li><b>Capability</b>: Modular plugin ecosystem for automated developer workflows.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/assistant"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square"/>
+      </p>
+    </td>
+  </tr>
+</table>
 
----
+<br/>
 
-### 🧠 3. [cognitivesystem](https://github.com/sahajpatel123/cognitivesystem) `Python` `Cognitive AI` `Reasoning Engine`
-> **Structured Cognitive Reasoning & Long-Term Memory Pipeline**
-- **Architecture**: Cognitive agent system combining episodic memory retrieval, structured knowledge graphs, and multi-step reasoning cycles.
-- **Key Capability**: Enhances standard LLM inference with structured cognitive state management and self-reflection loops.
-- 🔗 **Live Demo**: [cognitivesystem.vercel.app](https://cognitivesystem.vercel.app)
+### ⚡ High-Performance Systems & Quantitative Finance
 
----
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ <a href="https://github.com/sahajpatel123/conduraapp">conduraapp</a></h3>
+      <p><i>High-Concurrency Scalable Backend Infrastructure in Go</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Ultra-fast Go server built with goroutine concurrency models & memory pools.</li>
+        <li><b>Capability</b>: Engineered for microservices demanding ultra-low latency & horizontal scale.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/conduraapp"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-Go_(Golang)-00ADD8?style=flat-square&logo=go&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Perf-High_Concurrency-FF6C37?style=flat-square"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎲 <a href="https://github.com/sahajpatel123/polymarket">polymarket</a></h3>
+      <p><i>Prediction Market Quantitative Analytics & Arbitrage Engine</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Analytics suite interfacing with Polymarket orderbooks for real-time odds modeling.</li>
+        <li><b>Capability</b>: Statistical probability calculation & automated arbitrage execution.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/polymarket"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🚀 <a href="https://github.com/sahajpatel123/dispatch">dispatch</a></h3>
+      <p><i>Asynchronous Distributed Task Dispatch Queue</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Microservices task distribution queue for async job scheduling.</li>
+        <li><b>Capability</b>: Resilient worker pool management & background queue processing.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/dispatch"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧰 <a href="https://github.com/sahajpatel123/llm">llm</a></h3>
+      <p><i>LLM Integration Toolset & Dynamic Wrapper Utilities</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Lightweight TypeScript library for multi-model LLM API routing.</li>
+        <li><b>Capability</b>: Standardized prompt execution & response schema enforcement.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/llm"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+      </p>
+    </td>
+  </tr>
+</table>
 
-### ⚡ 4. [conduraapp](https://github.com/sahajpatel123/conduraapp) `Go (Golang)` `High Performance` `Systems Engineering`
-> **High-Concurrency Scalable Backend Infrastructure**
-- **Architecture**: High-throughput Go server architecture built with goroutine concurrency models, optimized memory allocators, and resilient fault isolation.
-- **Key Capability**: Designed for microservices demanding ultra-low latency and scalable horizontal expansion.
+<br/>
 
----
+### ⚛️ Scientific Simulations, Document AI & Research MLOps
 
-### 🎲 5. [polymarket](https://github.com/sahajpatel123/polymarket) `Python` `Prediction Markets` `Quant Strategy`
-> **Prediction Market Quantitative Analysis & Arbitrage Engine**
-- **Architecture**: Automated market analytics suite interfacing with Polymarket CLOB & orderbooks for real-time odds calculation and opportunity detection.
-- **Key Capability**: Statistical probability modeling and automated execution for prediction markets.
-
----
-
-### ⚛️ 6. [Simulation](https://github.com/sahajpatel123/Simulation) `Python` `Computational Physics` `Systems Modeling`
-> **Complex System Physics & Dynamic State Simulation**
-- **Architecture**: Mathematical simulation engine modeling complex physical dynamics, state evolution trajectories, and interactive system visualizers.
-- **Key Capability**: Numerical integration and real-time state space rendering.
-- 🔗 **Live Demo**: [simulation-iota.vercel.app](https://simulation-iota.vercel.app)
-
----
-
-### 📄 7. [cleardoc](https://github.com/sahajpatel123/cleardoc) `JavaScript` `Document AI` `Developer Tools`
-> **Intelligent Document Ingestion & AI Synthesis Engine**
-- **Architecture**: Full-stack web application designed for seamless technical document parsing, context extraction, and automated documentation generation.
-- 🔗 **Live Demo**: [cleardoc-seven.vercel.app](https://cleardoc-seven.vercel.app)
-
----
-
-### 🔬 8. [ResearchGradeSystem](https://github.com/sahajpatel123/ResearchGradeSystem) `Python` `AI Benchmarking` `MLOps`
-> **Academic-Grade AI System Evaluation & Verification Suite**
-- **Architecture**: Standardized evaluation framework for auditing AI models, benchmarking output fidelity, and enforcing empirical reproducibility.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚛️ <a href="https://github.com/sahajpatel123/Simulation">Simulation</a></h3>
+      <p><i>Complex System Physics & Dynamic State Simulator</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Mathematical simulation engine modeling physical state trajectories.</li>
+        <li><b>Capability</b>: Numerical integration & interactive real-time visual rendering.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/Simulation"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <a href="https://simulation-iota.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
+        <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📄 <a href="https://github.com/sahajpatel123/cleardoc">cleardoc</a></h3>
+      <p><i>Intelligent Document Ingestion & AI Synthesis Engine</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Full-stack document parsing & context extraction platform.</li>
+        <li><b>Capability</b>: Automated technical documentation synthesis for developer tools.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/cleardoc"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <a href="https://cleardoc-seven.vercel.app"><img src="https://img.shields.io/badge/Live-Vercel_Demo-0070F3?style=flat-square&logo=vercel&logoColor=white"/></a>
+        <img src="https://img.shields.io/badge/Tech-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔬 <a href="https://github.com/sahajpatel123/ResearchGradeSystem">ResearchGradeSystem</a></h3>
+      <p><i>Academic-Grade AI System Evaluation Suite</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Evaluation framework for auditing AI models & benchmarking output.</li>
+        <li><b>Capability</b>: Empirical output verification & research reproducibility tooling.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/ResearchGradeSystem"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎬 <a href="https://github.com/sahajpatel123/animatestory">animatestory</a></h3>
+      <p><i>Generative AI Multimedia & Storytelling Engine</i></p>
+      <hr/>
+      <ul>
+        <li><b>Architecture</b>: Dynamic web canvas integrating generative AI storyboards.</li>
+        <li><b>Capability</b>: Interactive multimedia animation & narrative generation.</li>
+      </ul>
+      <p align="center">
+        <a href="https://github.com/sahajpatel123/animatestory"><img src="https://img.shields.io/badge/Code-Repository-black?style=flat-square&logo=github"/></a>
+        <img src="https://img.shields.io/badge/Tech-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+      </p>
+    </td>
+  </tr>
+</table>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
