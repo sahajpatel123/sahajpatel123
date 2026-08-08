@@ -391,43 +391,43 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
-## 🤝 Let's Connect & Build Together!
+## 🤝 Let's Chat & Build Cool Stuff Together!
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-🟢_Open_to_Collaborations_%26_Tech_Chats-00FF66?style=for-the-badge&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Status-🟢_Always_Open_For_a_Friendly_Chat-00FF66?style=for-the-badge&labelColor=000000" />
   &nbsp;
-  <img src="https://img.shields.io/badge/Response_Time-⚡_<24_Hours-FF007F?style=for-the-badge&labelColor=000000" />
+  <img src="https://img.shields.io/badge/Response_Time-⚡_Fast_Replies_Guaranteed!-FF007F?style=for-the-badge&labelColor=000000" />
 </p>
 
 <br/>
 
 <div align="center">
-  <p><i>Whether you are a recruiter, engineer, founder, or open-source builder — select your preferred connection channel below:</i></p>
+  <p><i>Got an awesome project idea, want to brainstorm AI agents, share cool code, or just say hi? Pick your favorite way to connect!</i></p>
   <br/>
   <table>
     <tr>
       <td width="33%" align="center" valign="top">
-        <h3>💼 Professional</h3>
-        <p>Recruiting, consulting, software architecture & partnerships.</p>
+        <h3>👋 Let's Connect</h3>
+        <p>For career updates, tech networking, or just staying in touch across the dev community!</p>
         <br/>
         <a href="https://linkedin.com/in/sahajpatel1703">
-          <img src="https://img.shields.io/badge/LinkedIn-Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+          <img src="https://img.shields.io/badge/LinkedIn-Say_Hi_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
         </a>
       </td>
       <td width="33%" align="center" valign="top">
-        <h3>📧 Direct Inbox</h3>
-        <p>Deep tech discussions, project proposals & virtual coffee chats.</p>
+        <h3>💌 Drop a Note</h3>
+        <p>My inbox is always open for casual chats, cool ideas, virtual coffee, or deep tech talk.</p>
         <br/>
         <a href="mailto:patelsahaj01@icloud.com">
-          <img src="https://img.shields.io/badge/Email-Send_a_Message-007AFF?style=for-the-badge&logo=apple&logoColor=white" />
+          <img src="https://img.shields.io/badge/Email-Send_Me_an_Email-007AFF?style=for-the-badge&logo=apple&logoColor=white" />
         </a>
       </td>
       <td width="33%" align="center" valign="top">
-        <h3>🐙 Open Source</h3>
-        <p>Forking repos, issue discussions, PR reviews & star exchanges.</p>
+        <h3>🚀 Code & Collab</h3>
+        <p>Let's collaborate on open-source, share feedback, or build something together!</p>
         <br/>
         <a href="https://github.com/sahajpatel123">
-          <img src="https://img.shields.io/badge/GitHub-Follow_@sahajpatel123-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/GitHub-Join_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
         </a>
       </td>
     </tr>
@@ -437,6 +437,6 @@
 <br/>
 
 <div align="center">
-  <p>☕ <b>Favorite Tech Topics I Love Discussing:</b></p>
-  <code>🤖 Autonomous Agent Swarms</code> • <code>📈 Quant Trading & Arbitrage</code> • <code>⚡ Go Backend Architecture</code> • <code>🔬 Computational Physics</code>
+  <p>☕ <b>Always Up for a Chat About:</b></p>
+  <code>🤖 Autonomous Agent Swarms</code> • <code>📈 Quant Trading & Arbitrage</code> • <code>⚡ Fast Go Backends</code> • <code>🔬 Math & Physics</code>
 </div>
