@@ -5,12 +5,12 @@
 </picture>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=750&lines=Building+Autonomous+Multi-AI+Agent+Orchestrators;Quantitative+Trading+%26+Prediction+Market+Algorithms;High-Concurrency+Distributed+Go+Services;Cognitive+AI+Reasoning+%26+Memory+Architectures;Scientific+Simulations+%26+Research-Grade+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=60A5FA&center=true&vCenter=true&width=850&lines=Sahaj+Patel+-+Building+Autonomous+Multi-AI+Agent+Orchestrators;Sahaj+Patel+-+Quantitative+Trading+%26+Prediction+Market+Algorithms;Sahaj+Patel+-+High-Concurrency+Distributed+Go+Services;Sahaj+Patel+-+Cognitive+AI+Reasoning+%26+Memory+Architectures;Sahaj+Patel+-+Scientific+Simulations+%26+Research-Grade+Systems" alt="Typing SVG" />
 </p>
 
 <p align="center">
   <a href="https://github.com/sahajpatel123?tab=followers"><img src="https://img.shields.io/github/followers/sahajpatel123?style=for-the-badge&logo=github&color=3b82f6&labelColor=1e293b" alt="Followers"></a>
-  <a href="https://github.com/sahajpatel123?tab=repositories"><img src="https://img.shields.io/github/repos/personal/sahajpatel123?style=for-the-badge&logo=github&color=8b5cf6&labelColor=1e293b" alt="Repositories"></a>
+  <a href="https://github.com/sahajpatel123?tab=repositories"><img src="https://img.shields.io/badge/Repositories-14_Public-8b5cf6?style=for-the-badge&logo=github&logoColor=white" alt="Repositories"></a>
   <a href="https://linkedin.com/in/sahajpatel1703"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:patelsahaj01@icloud.com"><img src="https://img.shields.io/badge/Email-patelsahaj01%40icloud.com-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Email"></a>
 </p>
