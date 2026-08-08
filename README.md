@@ -56,7 +56,7 @@
 <br/>
 
 ### 🎯 What I Know & Master
-- 💻 **Primary Languages**: `Go (Golang)` • `Python` • `TypeScript` • `JavaScript`
+- 💻 **Primary Languages**: `Go (Golang)` • `Python` • `C and C++` • `JavaScript`
 - 🧠 **AI & Systems Core**: `Multi-Agent Swarms` • `Cognitive Architectures` • `Goroutine Concurrency` • `Quant Arbitrage` • `MLOps`
 - 🌐 **Frameworks & Cloud**: `Next.js` • `React` • `Node.js` • `FastAPI` • `Docker` • `Vercel`
 
@@ -342,9 +342,9 @@
   <!-- Dynamic Skill Icons Grid -->
   <a href="https://skillicons.dev">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark">
-      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=light">
-      <img src="https://skillicons.dev/icons?i=py,go,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark" alt="Skill Icons">
+      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark">
+      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=light">
+      <img src="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,docker,git,vercel&theme=dark" alt="Skill Icons">
     </picture>
   </a>
 </div>
