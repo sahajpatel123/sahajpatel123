@@ -108,15 +108,6 @@
   </tr>
 </table>
 
-<br/><br/>
-
-### 🎯 What I Know & Master
-- `Go (Golang)` • `Python` • `C and C++` • `JavaScript`
-- `Multi-Agent Swarms` • `Cognitive Architectures` • `Goroutine Concurrency` • `Quant Arbitrage` • `MLOps`
-- `Next.js` • `React` • `Node.js` • `FastAPI` • `Docker` • `Vercel`
-
-> 🎯 **Engineering Approach**: *First-principles design, high cross-domain adaptability, zero bloat, and end-to-end production ownership.*
-
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
