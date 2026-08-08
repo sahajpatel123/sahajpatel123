@@ -391,10 +391,11 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
-## 🤝 Let's Connect!
-
-I'm always open to discussing **Autonomous AI Agents**, **Quant Trading**, **Go Backend Architectures**, or open-source collaboration. Feel free to reach out — whether it's for a tech chat, project idea, or just to say hello!
-
-- 💼 **LinkedIn**: [linkedin.com/in/sahajpatel1703](https://linkedin.com/in/sahajpatel1703)
-- 📧 **Email**: [patelsahaj01@icloud.com](mailto:patelsahaj01@icloud.com)
-- 🐙 **GitHub**: [@sahajpatel123](https://github.com/sahajpatel123)
+<div align="center">
+  <h2>🤝 Let's Connect</h2>
+  <p>
+    💼 <b>LinkedIn</b>: <a href="https://linkedin.com/in/sahajpatel1703">linkedin.com/in/sahajpatel1703</a> &nbsp;•&nbsp;
+    📧 <b>Email</b>: <a href="mailto:patelsahaj01@icloud.com">patelsahaj01@icloud.com</a> &nbsp;•&nbsp;
+    🐙 <b>GitHub</b>: <a href="https://github.com/sahajpatel123">@sahajpatel123</a>
+  </p>
+</div>
