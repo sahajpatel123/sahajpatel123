@@ -56,13 +56,57 @@
 <br/>
 
 ### 🛠️ Languages & Tooling Ecosystem
-<a href="https://skillicons.dev">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,postgres,redis,graphql,docker,git,github,vercel,vscode,bash,linux,html,css&theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,postgres,redis,graphql,docker,git,github,vercel,vscode,bash,linux,html,css&theme=light">
-    <img src="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,postgres,redis,graphql,docker,git,github,vercel,vscode,bash,linux,html,css&theme=dark" alt="Skill Icons">
-  </picture>
-</a>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,go,c,cpp,ts,js,nextjs,react,nodejs,fastapi,postgres,redis,graphql,docker,git,github,vercel,vscode,bash,linux&theme=dark" alt="Sahaj's Tech Stack Icons" />
+  </a>
+</p>
+
+<br/>
+
+<table>
+  <tr>
+    <td align="right"><b>Languages</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/-Go_(Golang)-00ADD8?style=flat-square&logo=go&logoColor=white" />
+      <img src="https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white" />
+      <img src="https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
+      <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+      <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><b>Frameworks & Web</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+      <img src="https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><b>Systems & Cloud</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+      <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+      <img src="https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+      <img src="https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
+      <img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><b>Dev Tooling</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+      <img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+      <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" />
+      <img src="https://img.shields.io/badge/-GNU_Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" />
+    </td>
+  </tr>
+</table>
 
 <br/><br/>
 
