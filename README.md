@@ -391,52 +391,10 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=10,18,24,30,0&height=4&section=header" width="100%" />
 
-## 🤝 Let's Chat & Build Cool Stuff Together!
+## 🤝 Let's Connect!
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-🟢_Always_Open_For_a_Friendly_Chat-00FF66?style=for-the-badge&labelColor=000000" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Response_Time-⚡_Fast_Replies_Guaranteed!-FF007F?style=for-the-badge&labelColor=000000" />
-</p>
+I'm always open to discussing **Autonomous AI Agents**, **Quant Trading**, **Go Backend Architectures**, or open-source collaboration. Feel free to reach out — whether it's for a tech chat, project idea, or just to say hello!
 
-<br/>
-
-<div align="center">
-  <p><i>Got an awesome project idea, want to brainstorm AI agents, share cool code, or just say hi? Pick your favorite way to connect!</i></p>
-  <br/>
-  <table>
-    <tr>
-      <td width="33%" align="center" valign="top">
-        <h3>👋 Let's Connect</h3>
-        <p>For career updates, tech networking, or just staying in touch across the dev community!</p>
-        <br/>
-        <a href="https://linkedin.com/in/sahajpatel1703">
-          <img src="https://img.shields.io/badge/LinkedIn-Say_Hi_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-        </a>
-      </td>
-      <td width="33%" align="center" valign="top">
-        <h3>💌 Drop a Note</h3>
-        <p>My inbox is always open for casual chats, cool ideas, virtual coffee, or deep tech talk.</p>
-        <br/>
-        <a href="mailto:patelsahaj01@icloud.com">
-          <img src="https://img.shields.io/badge/Email-Send_Me_an_Email-007AFF?style=for-the-badge&logo=apple&logoColor=white" />
-        </a>
-      </td>
-      <td width="33%" align="center" valign="top">
-        <h3>🚀 Code & Collab</h3>
-        <p>Let's collaborate on open-source, share feedback, or build something together!</p>
-        <br/>
-        <a href="https://github.com/sahajpatel123">
-          <img src="https://img.shields.io/badge/GitHub-Join_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br/>
-
-<div align="center">
-  <p>☕ <b>Always Up for a Chat About:</b></p>
-  <code>🤖 Autonomous Agent Swarms</code> • <code>📈 Quant Trading & Arbitrage</code> • <code>⚡ Fast Go Backends</code> • <code>🔬 Math & Physics</code>
-</div>
+- 💼 **LinkedIn**: [linkedin.com/in/sahajpatel1703](https://linkedin.com/in/sahajpatel1703)
+- 📧 **Email**: [patelsahaj01@icloud.com](mailto:patelsahaj01@icloud.com)
+- 🐙 **GitHub**: [@sahajpatel123](https://github.com/sahajpatel123)
